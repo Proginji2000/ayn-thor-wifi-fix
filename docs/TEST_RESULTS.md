@@ -34,3 +34,6 @@ Raw logs are intentionally not published: they may contain MAC addresses, networ
 
 ## Full reboot follow-up — 19:52 CET
 User rebooted the device and reported loss of Wi-Fi. ADB confirmed power/control=auto, runtime_status=suspended, carrier=0 and Android scanner entering ScanningState at 19:52:06.321, followed by a 5-second dumpsys timeout. The temporary runtime PM setting does not survive this reboot. This does not establish causality. A second manual combined recovery trial is pending; defer boot automation until reproducibility is demonstrated.
+
+## Second recovery attempt — 19:55 CET
+After full reboot, manual PCI policy write was verified on/active. Following the requested framework restart, readback was auto/suspended, carrier=0 and Android scan count=0. Scanner history retained the exact 19:52:06.321 transition; framework restart execution was not established. Treat as failed recovery with an inconclusive protocol, not a controlled negative replication. Next trial must use uniquely named scripts, a fresh execution marker, system_server PID and boot ID before/after, and PCI readback. Boot automation remains deferred.
