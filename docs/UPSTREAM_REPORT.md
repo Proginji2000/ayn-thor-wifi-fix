@@ -11,3 +11,6 @@ Potential optional experiment: validate the exact firmware and PCI identity, set
 Evidence and qualification plan: https://github.com/Proginji2000/ayn-thor-wifi-fix
 
 Reference: https://github.com/JoelMomo/AYN-Thor-WiFi-Recovery (v0.3.0). No raw private logs included.
+
+## Follow-up — important limitation
+A second verified framework restart with PCI power/control=on recovered a first scan (18 results), then Android's next scan became stuck despite PCI remaining active and carrier=1. Kernel scan 40963 completed with 15 BSS. The runtime PM workaround is therefore not sufficient prevention; do not integrate it as a permanent fix. Investigation of Android scan result delivery/processing continues.
