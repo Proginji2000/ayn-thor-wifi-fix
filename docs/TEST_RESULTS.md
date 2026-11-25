@@ -31,3 +31,6 @@ At 19:41:08 CET, framework restart requested after PCI setting on/active confirm
 Single device, single successful combined trial. No controlled repeated A/B trials. No proof of causality or prevention. Internet access confirmed by user, not measured by automated test. No battery measurement, boot persistence, or wake-cycle qualification. Do not infer a permanent fix. Avoid PCI unbind/reset until independently justified.
 
 Raw logs are intentionally not published: they may contain MAC addresses, network identifiers or local paths.
+
+## Full reboot follow-up — 19:52 CET
+User rebooted the device and reported loss of Wi-Fi. ADB confirmed power/control=auto, runtime_status=suspended, carrier=0 and Android scanner entering ScanningState at 19:52:06.321, followed by a 5-second dumpsys timeout. The temporary runtime PM setting does not survive this reboot. This does not establish causality. A second manual combined recovery trial is pending; defer boot automation until reproducibility is demonstrated.
