@@ -151,13 +151,13 @@
           "physical_devices_tested": 1
         },
         "manual_rc2_evidence": {
-          "status": "portable_art_metadata_equivalence_pass_activation_exact_only",
+          "status": "blocked_native_bootstrap",
           "local_checks_pass": 30,
           "worker_unchanged": true,
           "enable_unchanged": true,
           "portable_art_physical_tested": true,
-          "hardened_bootstrap_physical_tested": false,
-          "uninstall_physical_tested": false,
+          "hardened_bootstrap_physical_tested": true,
+          "uninstall_physical_tested": true,
           "public_offline_bundle_verifier": true,
           "public_installer_available": false,
           "portable_art_evidence": {
@@ -189,6 +189,22 @@
               "reference_reconstruction_verifier_real_pair_tested": true,
               "reference_reconstruction_verifier_real_pair_pass": true
             }
+          },
+          "hardened_bootstrap_pass": false,
+          "uninstall_executed_confirmed": false,
+          "uninstall_qualified": false,
+          "lifecycle_trial": {
+            "stock_boot_verified": true,
+            "staging_integrity_pass": true,
+            "native_command_dispatched": true,
+            "protected_directory_created": true,
+            "copy_completion_confirmed": false,
+            "resume_failed_stage": "FILE",
+            "copy_retry_failed_stage": "DIR",
+            "fixed_retry_execution_confirmed": false,
+            "installation_retained": true,
+            "stock_unchanged": true,
+            "root_cause_confirmed": false
           }
         }
       }

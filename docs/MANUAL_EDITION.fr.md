@@ -70,3 +70,6 @@ Essai physique RC2 : compilation native et contrôles ART réussis, VDEX identiq
 Comparaison finale OAT : équivalence complète des deux ODEX observés hors checksum, taille et métadonnées de chemins autorisées ; tous les autres octets identiques. Le contrôle d'activation par empreinte exacte reste inchangé. Le vérificateur d'équivalence autonome privé est en qualification ; il ne permet pas l'activation d'un nouveau bundle. Prochaine étape : retrait réversible et amorçage durci RC2 lors d'un redémarrage stock planifié.
 
 Vérificateur autonome : PASS sur les deux ODEX réels. Le contrôle strict d'activation reste inchangé. Retrait réversible et nouvel amorçage à tester sur le triplet historique exact qualifié ; le retrait conserve son verrou jusqu'au redémarrage.
+
+### RC2 — qualification suspendue
+Le retrait n'a pas été confirmé : les tentatives d'amorçage natif s'arrêtent avant le désinstallateur ou ne produisent pas de journal. Le système stock et l'installation RC1 restent intacts. RC1 demeure la solution personnelle déjà qualifiée ; le durcissement RC2 et la désinstallation restent non qualifiés. Aucun installateur public complet disponible. Ne pas contourner les contrôles d'intégrité.

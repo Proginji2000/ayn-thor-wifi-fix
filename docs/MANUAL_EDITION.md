@@ -65,3 +65,6 @@ RC2 physical trial: native compilation and ART metadata PASS, exact VDEX, differ
 Final OAT comparison: observed pair equivalent outside checksum, metadata size and permitted path metadata; every other byte identical. Exact-hash activation gate unchanged. Private standalone equivalence verifier pending real-pair validation; no alternate bundle activation. Next: RC2 reversible uninstall and hardened bootstrap at a planned stock reboot.
 
 Standalone verifier passed both real ODEX files. Exact activation gate unchanged. Test reversible uninstall and hardened bootstrap using the original exact qualified tuple; uninstall retains its lock until reboot.
+
+### RC2 — qualification suspended
+Native bootstrap attempts stopped before confirmed uninstall or produced no tagged log. Stock system and RC1 installation unchanged. RC1 remains the previously qualified private pilot; RC2 hardening and uninstall remain unqualified. No complete public installer available. Do not bypass integrity gates.
