@@ -205,6 +205,14 @@
             "installation_retained": true,
             "stock_unchanged": true,
             "root_cause_confirmed": false
+          },
+          "fixed_reference_path_compiler": {
+            "host_syntax_pass": true,
+            "device_script_syntax_pass": true,
+            "mock_collision_rejection_pass": true,
+            "physical_compile_tested": false,
+            "exact_output_qualified": false,
+            "existing_remote_directory_reuse_allowed": false
           }
         }
       }
