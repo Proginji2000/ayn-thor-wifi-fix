@@ -90,7 +90,7 @@
           "https_automated": false,
           "rollback_stock_verified": true,
           "watchdog_armed": true,
-          "watchdog_expiry_rollback_tested": false,
+          "watchdog_expiry_rollback_tested": true,
           "strict_acceptance_met": true,
           "extended_stability_qualified": false
         },
@@ -106,6 +106,17 @@
           "watchdog_armed": true,
           "watchdog_expiry_rollback_tested": false,
           "strict_acceptance_met": false
+        },
+        "watchdog_evidence": {
+          "gate": "V3.6",
+          "timeout_seconds": 180,
+          "worker_sigkill": true,
+          "watchdog_detected_worker_gone": true,
+          "watchdog_requested_reboot": true,
+          "stock_tuple_verified": true,
+          "firmware_slot_pci_unchanged": true,
+          "host_rc": 0,
+          "partition_restore_tested": false
         }
       }
     }
