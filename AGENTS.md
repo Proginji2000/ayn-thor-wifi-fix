@@ -17,3 +17,6 @@ The .377 runtime candidate is experimental, not a supported permanent installati
 Unknown firmware: stop activation. Assess whether vendor correction exists, then rebuild and qualify if needed. Never auto-flash after an update. Retire redundant patches only after verification.
 
 See docs/PERSISTENCE_PLAN.md for release criteria.
+
+## Current handoff (2026-11-26)
+Read docs/HANDOFF.md before starting. Local V3.3-r3 full-build repeatability is established, not cross-machine reproducibility. The historical V2 runtime bundle and new offline-only V3.3-r3 JAR are distinct; preserve both hashes, never mix their ART artifacts. Next gate: isolated native ART compilation with known active-tuple precheck and unchanged-system evidence; no live substitution or boot changes. Do not repeat completed tests without an evidence gap or changed input.
