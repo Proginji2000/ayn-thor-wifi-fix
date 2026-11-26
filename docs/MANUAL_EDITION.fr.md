@@ -68,3 +68,5 @@ Le kit privé réunit le constructeur, la compilation ART portable, le pilote du
 Essai physique RC2 : compilation native et contrôles ART réussis, VDEX identique, ODEX différent. Le contrôle strict a refusé le bundle. Système actif inchangé. Analyse binaire hors ligne requise avant distribution ; aucune nouvelle compilation nécessaire pour cette analyse.
 
 Comparaison finale OAT : équivalence complète des deux ODEX observés hors checksum, taille et métadonnées de chemins autorisées ; tous les autres octets identiques. Le contrôle d'activation par empreinte exacte reste inchangé. Le vérificateur d'équivalence autonome privé est en qualification ; il ne permet pas l'activation d'un nouveau bundle. Prochaine étape : retrait réversible et amorçage durci RC2 lors d'un redémarrage stock planifié.
+
+Vérificateur autonome : PASS sur les deux ODEX réels. Le contrôle strict d'activation reste inchangé. Retrait réversible et nouvel amorçage à tester sur le triplet historique exact qualifié ; le retrait conserve son verrou jusqu'au redémarrage.

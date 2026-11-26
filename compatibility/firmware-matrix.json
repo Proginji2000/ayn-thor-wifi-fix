@@ -186,7 +186,8 @@
               "changed_oat_key": "dex2oat-cmdline",
               "remaining_binary_identical": true,
               "input_oat_checksum_independently_validated": false,
-              "reference_reconstruction_verifier_real_pair_tested": false
+              "reference_reconstruction_verifier_real_pair_tested": true,
+              "reference_reconstruction_verifier_real_pair_pass": true
             }
           }
         }
