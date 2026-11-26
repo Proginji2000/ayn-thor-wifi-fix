@@ -41,7 +41,7 @@
       },
       "evidence": "docs/TEST_RESULTS.md",
       "offline_candidate_v33r3": {
-        "status": "native_art_qualified_runtime_partial",
+        "status": "native_art_qualified_runtime_scan_pass",
         "deployment_allowed": false,
         "jar_sha256": "3a4f3d5df69a2c7ed733c5454599921ab98974d243b4c4448391812a3e468202",
         "dex_sha256": "c96b02d6bb268df9538d6669cbea366c1f01523ba71e8230c437559e3f35d840",
@@ -51,7 +51,7 @@
         "odex_sha256": "5f52a3e8434bc473821d661fcb56cafee666960c42068cb57673176fe8460d41",
         "vdex_sha256": "cd07ab2a5645cae97b114c5c33b3f60b2f96cfe4ad15d300dddf7c3c89efd67c",
         "art_compilation_qualified": true,
-        "runtime_qualified": false,
+        "runtime_qualified": true,
         "source_archive_independent": false,
         "dependency_lock_qualified": false,
         "toolchain": {
@@ -78,6 +78,23 @@
           "art_repeatability_qualified": false
         },
         "runtime_evidence": {
+          "gate": "V3.5-r3",
+          "scope": "volatile_scan_qualification_after_45s_settle",
+          "startup_settle_seconds": 45,
+          "art_mapping_verified": true,
+          "framework_stable": true,
+          "scan_pass": 8,
+          "scan_fail": 0,
+          "scanner_responsive": 8,
+          "ip_probes_pass": 2,
+          "https_automated": false,
+          "rollback_stock_verified": true,
+          "watchdog_armed": true,
+          "watchdog_expiry_rollback_tested": false,
+          "strict_acceptance_met": true,
+          "extended_stability_qualified": false
+        },
+        "previous_runtime_evidence": {
           "gate": "V3.5-r2",
           "art_mapping_verified": true,
           "framework_stable": true,
