@@ -35,9 +35,35 @@
         "partition_restore_tested": false,
         "reproducible_build_qualified": false,
         "automatic_boot_qualified": false,
-        "extended_stability_qualified": false
+        "extended_stability_qualified": false,
+        "local_full_build_repeatability_tested": true,
+        "cross_machine_reproducibility_tested": false
       },
-      "evidence": "docs/TEST_RESULTS.md"
+      "evidence": "docs/TEST_RESULTS.md",
+      "offline_candidate_v33r3": {
+        "status": "offline_candidate_only",
+        "deployment_allowed": false,
+        "jar_sha256": "3a4f3d5df69a2c7ed733c5454599921ab98974d243b4c4448391812a3e468202",
+        "dex_sha256": "c96b02d6bb268df9538d6669cbea366c1f01523ba71e8230c437559e3f35d840",
+        "historical_binary_match": false,
+        "identical_disassembled_classes": 3138,
+        "independent_local_builds": 2,
+        "odex_sha256": null,
+        "vdex_sha256": null,
+        "art_compilation_qualified": false,
+        "runtime_qualified": false,
+        "source_archive_independent": false,
+        "dependency_lock_qualified": false,
+        "toolchain": {
+          "python": "3.14.4",
+          "zlib": "1.3.1",
+          "java": "21.0.13.1",
+          "smali": "2.5.2.git2771eae-debian",
+          "baksmali": "2.5.2.git2771eae-debian",
+          "api": 33,
+          "jobs": 1
+        }
+      }
     }
   ]
 }
