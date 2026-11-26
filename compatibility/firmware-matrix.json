@@ -52,7 +52,7 @@
         "vdex_sha256": "cd07ab2a5645cae97b114c5c33b3f60b2f96cfe4ad15d300dddf7c3c89efd67c",
         "art_compilation_qualified": true,
         "runtime_qualified": true,
-        "source_archive_independent": false,
+        "source_archive_independent": true,
         "dependency_lock_qualified": false,
         "toolchain": {
           "python": "3.14.4",
@@ -117,6 +117,16 @@
           "firmware_slot_pci_unchanged": true,
           "host_rc": 0,
           "partition_restore_tested": false
+        },
+        "standalone_build_evidence": {
+          "status": "PASS",
+          "standalone_builds": 1,
+          "verified_class_count": 3138,
+          "expected_normalizations": 14,
+          "exact_qualified_jar_match": true,
+          "exact_qualified_dex_match": true,
+          "cross_machine_reproducibility_tested": false,
+          "public_builder_available": false
         }
       }
     }

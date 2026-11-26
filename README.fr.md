@@ -12,7 +12,7 @@ V3.3-r3 produit deux JAR strictement identiques lors de deux constructions local
 - [Tutoriel expérimental et état de disponibilité](docs/MANUAL_EDITION.fr.md)
 - [Script de précontrôle et extraction stock](tools/manual_preflight.py)
 
-Le script est en lecture seule sur la console. La reconstruction indépendante et le lanceur manuel portable ne sont pas encore disponibles dans ce dépôt.
+Le script est en lecture seule sur la console. La reconstruction indépendante a réussi en privé sur le WSL d'origine ; le constructeur et le lanceur manuel réutilisable ne sont pas encore publiés. Le parcours complet portable reste à qualifier.
 
 ## Documentation
 - [Passation et prochaine étape](docs/HANDOFF.md)

@@ -50,3 +50,7 @@ Voir [la matrice](../compatibility/firmware-matrix.json), [les preuves](TEST_RES
 
 ### Avancement du constructeur
 Le constructeur autonome privé a été assemblé à partir des deux sources historiques vérifiées. Il ne dépend plus de l'archive historique ni du JAR V2. Contrôles locaux de syntaxe, intégrité DEX et empaquetage réussis ; reconstruction intégrale avec les outils verrouillés à effectuer avant publication. Le script d'activation portable reste à intégrer.
+
+
+### Reconstruction autonome validée
+Un build WSL complet a produit exactement le JAR et le DEX qualifiés, sans archive ni ancien JAR. Le prototype privé de lanceur manuel réutilisable est prêt pour qualification physique ; il installe des fichiers locaux, sans activation automatique au démarrage. Le constructeur public, la génération ART portable et l'installateur complet restent à publier après revue et essais. Aucun nouveau cycle de huit scans requis pour les artefacts identiques.

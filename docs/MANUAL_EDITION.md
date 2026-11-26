@@ -45,3 +45,7 @@ See [compatibility matrix](../compatibility/firmware-matrix.json), [test results
 
 ### Builder progress
 The private standalone builder has been assembled from both verified historical sources. It no longer requires the historical archive or V2 reference JAR. Syntax, DEX integrity and packaging tests passed; full pinned-toolchain build remains pending before release. Portable activation is still pending.
+
+
+### Standalone reconstruction validated
+One complete WSL build reproduced the exact qualified JAR and DEX without historical archive or reference JAR. A private reusable manual-launcher pilot is prepared for device qualification; local file installation only, no automatic boot activation. Public builder, portable ART generation and complete installer remain pending review and testing. No repeat eight-scan trial required for identical artifacts.

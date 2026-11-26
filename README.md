@@ -12,7 +12,7 @@ V3.3-r3 produces identical JARs in two complete local builds, with all 3138 disa
 - [Experimental tutorial and availability](docs/MANUAL_EDITION.md)
 - [Read-only preflight and stock extraction script](tools/manual_preflight.py)
 
-Standalone candidate generation and a portable manual launcher are not yet available in this repository.
+Standalone candidate generation passed privately on the original WSL environment; the builder and reusable manual launcher are not yet published. The portable complete workflow remains pending.
 
 ## Documentation
 - [Current development handoff](docs/HANDOFF.md)
