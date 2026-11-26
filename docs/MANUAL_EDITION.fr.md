@@ -47,3 +47,6 @@ Ne pas utiliser les anciens scripts propres à la session de développement comm
 - Nouvelle Manual Edition combinée : à qualifier ; construction indépendante, portabilité, durcissement et usage prolongé restent à faire.
 
 Voir [la matrice](../compatibility/firmware-matrix.json), [les preuves](TEST_RESULTS.md) et [la récupération](RECOVERY_GATE.md).
+
+### Avancement du constructeur
+Le constructeur autonome privé a été assemblé à partir des deux sources historiques vérifiées. Il ne dépend plus de l'archive historique ni du JAR V2. Contrôles locaux de syntaxe, intégrité DEX et empaquetage réussis ; reconstruction intégrale avec les outils verrouillés à effectuer avant publication. Le script d'activation portable reste à intégrer.

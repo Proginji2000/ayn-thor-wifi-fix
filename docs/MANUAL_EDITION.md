@@ -42,3 +42,6 @@ Do not use session-specific historical scripts as a public installer, flash shar
 Historical V3.0 manual activation until reboot demonstrated. V3.5-r3 new candidate strict scans 8/8, scanner responsive 8/8, IP probes 2/2, ART mappings and stock rollback PASS. V3.6 independent watchdog rollback after worker termination PASS. Combined Manual Edition, portable standalone build, hardening and extended use remain pending.
 
 See [compatibility matrix](../compatibility/firmware-matrix.json), [test results](TEST_RESULTS.md), [recovery gate](RECOVERY_GATE.md).
+
+### Builder progress
+The private standalone builder has been assembled from both verified historical sources. It no longer requires the historical archive or V2 reference JAR. Syntax, DEX integrity and packaging tests passed; full pinned-toolchain build remains pending before release. Portable activation is still pending.
