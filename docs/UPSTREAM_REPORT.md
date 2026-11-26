@@ -14,3 +14,6 @@ Reference: https://github.com/JoelMomo/AYN-Thor-WiFi-Recovery (v0.3.0). No raw p
 
 ## Follow-up — important limitation
 A second verified framework restart with PCI power/control=on recovered a first scan (18 results), then Android's next scan became stuck despite PCI remaining active and carrier=1. Kernel scan 40963 completed with 15 BSS. The runtime PM workaround is therefore not sufficient prevention; do not integrate it as a permanent fix. Investigation of Android scan result delivery/processing continues.
+
+## Current assessment (2026-11-26) — supersedes the initial PM proposal
+Repeated stock diagnostics support a non-progressing Wi-Fi scan-result parser in Android; stock recurrence was observed after return from Fastboot. Historical Java candidate V2 and matching ART artifacts restored scanner responsiveness with PCI runtime PM auto; the crossover test did not establish a need to force PCI on. V3.0 manual volatile activation was verified, not permanent startup. V3.3-r3 local repeatability PASS (two complete builds); new binary is offline-only, native ART and runtime qualification pending. Request a supported vendor correction and coordinate technical details privately. Do not recommend the initial PM workaround as permanent prevention. This document is a historical draft; no submission or vendor acknowledgment is established.
