@@ -17,3 +17,7 @@ Last measured state: exact stock after V3.6 watchdog-triggered rollback. Both no
 - Coordinate private vendor report and community release. No proprietary binaries, raw private logs, device IDs or triggering-input details in public repository.
 
 Read AGENTS.md, TEST_RESULTS.md, PERSISTENCE_PLAN.md and compatibility/firmware-matrix.json before further work. Historical experiments are evidence, not install instructions. No stable release authorized.
+
+
+## Parallel Manual Edition (2026-11-26)
+Prioritize manual, no-partition-write distribution independently of full firmware recovery. Historical V3.0 until-reboot operation was demonstrated; the new exact bundle passed bounded runtime scans and both rollback paths. Port the V3.0 user experience with the V3.5-r3/V3.6 watchdog and integrity gates, then qualify that combined launcher once on the device. First publish read-only compatibility/extraction tooling and FR/EN draft guide. Standalone build still depends on private historical inputs; remove that dependency before calling the tutorial executable end-to-end. No proprietary binary or trigger construction in Git. Full firmware is a recovery option, not an input required for temporary activation; independently verified targeted recovery can also satisfy the boot-change gate. No boot write authorized. See docs/MANUAL_EDITION.md.

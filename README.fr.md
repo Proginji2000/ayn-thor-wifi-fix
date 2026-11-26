@@ -6,7 +6,13 @@
 
 Sur une AYN Thor équipée du firmware Android 13 `Thor_V1.0.0.377_20260206_165408_user`, les diagnostics répétés du système original montrent un blocage du scanner Wi-Fi Android pendant le traitement des résultats. Le correctif Java historique V2 a été testé sur la console avec ses artefacts ART associés et la politique d'alimentation PCI d'origine (auto). V3.0 permet une activation manuelle volatile ; un redémarrage complet restaure le système original. Le maintien du PCI actif seul n'est pas une solution permanente démontrée.
 
-V3.3-r3 produit deux JAR strictement identiques lors de deux constructions locales complètes. Les 3 138 classes désassemblées correspondent au candidat historique. Le binaire diffère de V2 : sa qualification ART native et dynamique reste à effectuer. Ce candidat est réservé aux essais hors ligne, sans autorisation d'installation.
+V3.3-r3 produit deux JAR strictement identiques lors de deux constructions locales complètes. Les 3 138 classes désassemblées correspondent au candidat historique. Le binaire diffère de V2 : sa compilation ART native et sa qualification fonctionnelle temporaire ont réussi (V3.5-r3, 8/8 scans). Le rollback autonome après arrêt brutal du worker a réussi (V3.6). Aucune installation permanente ni distribution stable autorisée.
+
+## Manual Edition — préparation communautaire
+- [Tutoriel expérimental et état de disponibilité](docs/MANUAL_EDITION.fr.md)
+- [Script de précontrôle et extraction stock](tools/manual_preflight.py)
+
+Le script est en lecture seule sur la console. La reconstruction indépendante et le lanceur manuel portable ne sont pas encore disponibles dans ce dépôt.
 
 ## Documentation
 - [Passation et prochaine étape](docs/HANDOFF.md)

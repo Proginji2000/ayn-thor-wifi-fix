@@ -15,3 +15,7 @@ Status: BLOCKED for boot modification. Last verified device state: stock .377, s
 4. Continue offline installer/uninstaller and persistence design in parallel. Prefer official fix or supported native hook; Magisk remains a candidate, not selected or installed. No automatic flash, slot switch, AVB change, or boot persistence until recovery and authorization gates met.
 
 No vendor contact or package download has been performed by this update. No binaries or raw logs published.
+
+
+## Alternative recovery route
+Full firmware is a fallback, not a mandatory dependency for a temporary manual patch. For a proposed narrowly scoped boot modification, a verified exact original partition image and an independently usable restoration method may suffice, subject to review of all partitions affected, bootloader behavior, failure modes and explicit write authorization. Existing init_boot backups and Fastboot transport alone do not establish successful restoration. See official Magisk installation guidance (https://topjohnwu.github.io/Magisk/install) and safe-mode FAQ (https://topjohnwu.github.io/Magisk/faq.html) for candidate mechanisms, not Thor-specific qualification. The vendor recovery request has been sent by the user; no response or media verified yet.

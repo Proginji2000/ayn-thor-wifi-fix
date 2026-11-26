@@ -1,0 +1,8 @@
+# Private local artifacts
+thor-stock-private/
+*.jar
+*.odex
+*.vdex
+*.dex
+*.img
+__pycache__/
