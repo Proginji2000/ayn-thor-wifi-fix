@@ -1,12 +1,14 @@
 # Development handoff — 2026-11-26
 
 ## Current gate
-V3.3-r3 local full-build repeatability PASS. Two independent clean work directories produced byte-identical JARs; 3138 disassembled classes match historical V2. Historical binary equality is false. V3.4-r2 native ART qualification PASS on the same .377 device; new bundle has distinct matching JAR/ODEX/VDEX hashes. Runtime qualification pending; deployment_allowed=false. See TEST_RESULTS.md and the firmware compatibility manifest for exact hashes and toolchain versions.
+V3.3-r3 local full-build repeatability PASS. Two independent clean work directories produced byte-identical JARs; 3138 disassembled classes match historical V2. Historical binary equality is false. V3.4-r2 native ART qualification PASS on the same .377 device; new bundle has distinct matching JAR/ODEX/VDEX hashes. V3.5-r2 runtime PARTIAL: executable ART mappings verified, scanner responsive 8/8, fresh scans 7/8, IP probes 2/2, stock reboot rollback PASS. Strict acceptance unmet; deployment_allowed=false. See TEST_RESULTS.md and the firmware compatibility manifest for exact hashes and toolchain versions.
 
 ## Runtime and recovery
 Historical V2 JAR/ODEX/VDEX was tested on .377 with manual volatile V3.0 activation; ART mappings and scanner response verified. V2.7 comparison 8/8 auto and 8/8 on; keep PCI runtime PM auto. Stock defect recurred after controlled Fastboot return; scanner timeout and repeated busy parser stack recorded. V3.4-r2 confirmed historical V2 active, scanner responsive before/after isolated compilation, PCI auto, boot/PID/active tuple unchanged. Recheck current state before further device work. Backups of both init_boot slots and native Fastboot transport verified, but actual partition restoration and full recovery are not qualified. Bootloader remains unchanged by this project; no partition flash performed. Manual activation is not permanent persistence.
 
-## Next action (V3.5)
+## Next action (V3.5 follow-up)
+Retrieve sanitized retained scanner-1/2 event history and aggregate result ages from the matching private staging directory. First cycle timed out immediately after framework startup; cause unknown. Do not erase failed cycle or relax acceptance criteria. Current last measured state is stock after verified rollback. Preserve all evidence before deciding on a further controlled trial.
+
 Prepare a controlled volatile runtime qualification of the new ART bundle, without partition writes or persistence. Review the previously qualified temporary activation and rollback harness, require verified exact stock/historical/new tuples and explicit approval before any live replacement or disruptive restart. Establish recovery readiness and bounded rollback; verify actual executable ODEX/VDEX mappings, stable framework, fresh scan publication, scanner responsiveness, PCI auto and connectivity. Distinguish new runtime evidence from historical V2 measurements. No repeat of V3.4 needed unless inputs or evidence change. ART compilation repeatability across independent runs is not yet established. Keep all proprietary files and raw logs private.
 
 ## Remaining engineering

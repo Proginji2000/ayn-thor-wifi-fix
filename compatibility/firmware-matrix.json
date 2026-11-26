@@ -41,7 +41,7 @@
       },
       "evidence": "docs/TEST_RESULTS.md",
       "offline_candidate_v33r3": {
-        "status": "native_art_qualified_runtime_pending",
+        "status": "native_art_qualified_runtime_partial",
         "deployment_allowed": false,
         "jar_sha256": "3a4f3d5df69a2c7ed733c5454599921ab98974d243b4c4448391812a3e468202",
         "dex_sha256": "c96b02d6bb268df9538d6669cbea366c1f01523ba71e8230c437559e3f35d840",
@@ -76,6 +76,19 @@
           "scanner_after_responsive": true,
           "artifact_transfer_verified": true,
           "art_repeatability_qualified": false
+        },
+        "runtime_evidence": {
+          "gate": "V3.5-r2",
+          "art_mapping_verified": true,
+          "framework_stable": true,
+          "scan_pass": 7,
+          "scan_fail": 1,
+          "scanner_responsive": 8,
+          "ip_probes_pass": 2,
+          "rollback_stock_verified": true,
+          "watchdog_armed": true,
+          "watchdog_expiry_rollback_tested": false,
+          "strict_acceptance_met": false
         }
       }
     }

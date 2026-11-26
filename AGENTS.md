@@ -20,3 +20,5 @@ See docs/PERSISTENCE_PLAN.md for release criteria.
 
 ## Current handoff (2026-11-26)
 Read docs/HANDOFF.md before starting. Local V3.3-r3 full-build repeatability is established, not cross-machine reproducibility. V3.4-r2 isolated native ART compilation PASS; historical V2 and new V3.3-r3/V3.4 ART bundles remain distinct. Preserve both tuples, never mix artifacts. Next gate V3.5: prepare and review bounded volatile runtime qualification and rollback; live substitution requires explicit approval and recovery readiness. No permanent installation or boot changes. Do not repeat completed tests without an evidence gap or changed input.
+
+V3.5-r2 runtime PARTIAL: new bundle executable ART mappings verified, scanner responsive 8/8, fresh scans 7/8, IP probes 2/2, stock reboot rollback PASS. Review retained first-cycle evidence before repeating. Deployment remains denied.
