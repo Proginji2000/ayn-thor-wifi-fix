@@ -11,6 +11,7 @@ V3.3-r3 produces identical JARs in two complete local builds, with all 3138 disa
 ## Manual Edition — community preparation
 - [Experimental tutorial and availability](docs/MANUAL_EDITION.md)
 - [Read-only preflight and stock extraction script](tools/manual_preflight.py)
+- [Offline exact-bundle verification](tools/manual_verify_bundle.py)
 
 Standalone candidate generation passed privately on the original WSL environment; the manual pilot passed installation, duplicate rejection and reuse after reboot. Builder and launcher remain private; the complete public portable installer is not yet available.
 

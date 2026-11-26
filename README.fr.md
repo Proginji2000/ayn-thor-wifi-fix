@@ -11,6 +11,7 @@ V3.3-r3 produit deux JAR strictement identiques lors de deux constructions local
 ## Manual Edition — préparation communautaire
 - [Tutoriel expérimental et état de disponibilité](docs/MANUAL_EDITION.fr.md)
 - [Script de précontrôle et extraction stock](tools/manual_preflight.py)
+- [Vérification hors ligne du bundle exact](tools/manual_verify_bundle.py)
 
 Le script est en lecture seule sur la console. La reconstruction indépendante a réussi en privé sur le WSL d'origine ; le pilote manuel a réussi l'installation, le rejet de doublon et la réactivation après redémarrage. Le constructeur et le lanceur restent privés ; l'installateur portable public complet n'est pas encore disponible.
 

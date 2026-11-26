@@ -55,3 +55,7 @@ One complete WSL build reproduced the exact qualified JAR and DEX without histor
 After a full reboot, run the same Enable launcher from AYN Settings once. Save games first; Android framework restarts. Wait for the readiness check (about 70 s observed). The fix remains active until the next full reboot, with no PC needed for activation. To return to stock, reboot and do not run Enable; this disables the fix but retains local files. Complete uninstall is not qualified. Do not activate after an unsupported OTA.
 
 Both manual activations passed ART mapping, fresh scan (9.13 s and 9.14 s) and IP checks; duplicate activation was rejected without framework changes. A full reboot retained installation files and restored the stock tuple; the same launcher reactivated without file transfer. This workflow is not yet available as a standalone public download. Full firmware is not required for Manual Edition.
+
+
+## RC2 — release engineering
+Private kit combines standalone builder, portable ART compiler, hardened pilot and reversible uninstall. 30 local checks PASS; no new Android execution. Public [manual_verify_bundle.py](../tools/manual_verify_bundle.py) checks the exact tuple offline: `python3 tools/manual_verify_bundle.py path-to-bundle`. It does not build, transfer or activate anything. Complete kit stays private pending ART output repeatability, bootstrap, uninstall and security review. Full firmware not required for Manual Edition.
