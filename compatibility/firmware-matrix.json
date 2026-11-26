@@ -127,6 +127,28 @@
           "exact_qualified_dex_match": true,
           "cross_machine_reproducibility_tested": false,
           "public_builder_available": false
+        },
+        "manual_pilot_evidence": {
+          "status": "PASS",
+          "local_install": true,
+          "manual_activations": 2,
+          "duplicate_rejected": true,
+          "duplicate_framework_unchanged": true,
+          "stock_after_reboot": true,
+          "installation_retained": true,
+          "reused_same_launcher": true,
+          "readiness_scan_seconds": [
+            9.13,
+            9.14
+          ],
+          "ip_probes_pass": 2,
+          "watchdog_disarmed": true,
+          "active_until_reboot": true,
+          "automatic_boot": false,
+          "uninstall_qualified": false,
+          "public_installer_available": false,
+          "extended_stability_qualified": false,
+          "physical_devices_tested": 1
         }
       }
     }

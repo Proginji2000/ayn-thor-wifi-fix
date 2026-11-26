@@ -30,22 +30,28 @@ Do not redistribute proprietary stock files. This script is read-only on the dev
 
 ## Steps not yet available
 
-5. Rebuild the corrected JAR from stock using the standalone builder and compile matching ART artifacts locally. The existing build still depends on a private historical archive and a reference binary; the independent builder is not shipped yet.
+5. Rebuild the corrected JAR from stock using the standalone builder and compile matching ART artifacts locally. The standalone build passed privately without a historical archive or reference binary; the builder and portable ART generation are not yet shipped.
 6. Verify a locally built candidate with `python tools/manual_preflight.py --bundle path-to-candidate`. This verifies hashes, not functionality or installation permission.
-7. The future portable installer will transfer the candidate and manual launcher. It must verify stock, stage a protected worker, arm the watchdog, verify ART mappings and scanner after settling, and retain the patch until reboot only after successful checks. This combined manual workflow must be physically qualified before releasing its activation script as usable.
+7. The future portable installer will transfer the candidate and manual launcher. It must verify stock, stage a protected worker, arm the watchdog, verify ART mappings and scanner after settling, and retain the patch until reboot only after successful checks. The combined private pilot passed physical qualification on one device; public security review and ART generation integration remain pending.
 8. After a volatile activation a full reboot restores stock. V3.5-r3 and V3.6 demonstrate normal and watchdog rollback, not boot partition recovery.
 
 Do not use session-specific historical scripts as a public installer, flash shared images, switch slots or change AVB.
 
 ## Evidence
 
-Historical V3.0 manual activation until reboot demonstrated. V3.5-r3 new candidate strict scans 8/8, scanner responsive 8/8, IP probes 2/2, ART mappings and stock rollback PASS. V3.6 independent watchdog rollback after worker termination PASS. Combined Manual Edition, portable standalone build, hardening and extended use remain pending.
+Historical V3.0 manual activation until reboot demonstrated. V3.5-r3 new candidate strict scans 8/8, scanner responsive 8/8, IP probes 2/2, ART mappings and stock rollback PASS. V3.6 independent watchdog rollback after worker termination PASS. Combined private pilot installation, activation, duplicate rejection and reboot reuse PASS; portability, hardening, uninstall and extended use remain pending.
 
 See [compatibility matrix](../compatibility/firmware-matrix.json), [test results](TEST_RESULTS.md), [recovery gate](RECOVERY_GATE.md).
 
 ### Builder progress
-The private standalone builder has been assembled from both verified historical sources. It no longer requires the historical archive or V2 reference JAR. Syntax, DEX integrity and packaging tests passed; full pinned-toolchain build remains pending before release. Portable activation is still pending.
+The private standalone builder has been assembled from both verified historical sources. It no longer requires the historical archive or V2 reference JAR. Syntax, DEX integrity and packaging tests passed; full build with the reference tool versions passed privately. Portable activation is still pending.
 
 
 ### Standalone reconstruction validated
-One complete WSL build reproduced the exact qualified JAR and DEX without historical archive or reference JAR. A private reusable manual-launcher pilot is prepared for device qualification; local file installation only, no automatic boot activation. Public builder, portable ART generation and complete installer remain pending review and testing. No repeat eight-scan trial required for identical artifacts.
+One complete WSL build reproduced the exact qualified JAR and DEX without historical archive or reference JAR. A private reusable manual-launcher pilot passed device qualification; local file installation only, no automatic boot activation. Public builder, portable ART generation and complete installer remain pending review and testing. No repeat eight-scan trial required for identical artifacts.
+
+
+## Daily use after private pilot installation
+After a full reboot, run the same Enable launcher from AYN Settings once. Save games first; Android framework restarts. Wait for the readiness check (about 70 s observed). The fix remains active until the next full reboot, with no PC needed for activation. To return to stock, reboot and do not run Enable; this disables the fix but retains local files. Complete uninstall is not qualified. Do not activate after an unsupported OTA.
+
+Both manual activations passed ART mapping, fresh scan (9.13 s and 9.14 s) and IP checks; duplicate activation was rejected without framework changes. A full reboot retained installation files and restored the stock tuple; the same launcher reactivated without file transfer. This workflow is not yet available as a standalone public download. Full firmware is not required for Manual Edition.

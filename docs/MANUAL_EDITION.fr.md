@@ -32,9 +32,9 @@ Les fichiers sont propriétaires : les garder hors du dépôt et ne pas les part
 
 ## Étapes à finaliser
 
-5. Reconstruire le JAR à partir du stock avec le constructeur autonome, puis compiler localement les composants ART compatibles. La reconstruction actuelle dépend encore d'une archive historique privée et d'une référence binaire ; l'outil autonome n'est pas fourni ici.
+5. Reconstruire le JAR à partir du stock avec le constructeur autonome, puis compiler localement les composants ART compatibles. La reconstruction autonome a réussi en privé sans archive ni référence binaire ; le constructeur et la compilation ART portable ne sont pas encore distribués.
 6. Vérifier les trois empreintes du candidat avec `python tools/manual_preflight.py --bundle chemin-du-candidat`. Cette vérification ne construit ni n'active le candidat.
-7. Le futur installateur portable transférera le candidat et le lanceur manuel. L'activation vérifiera le stock, protégera le worker, armera le watchdog, vérifiera les mappings et le scanner après stabilisation, puis maintiendra le correctif jusqu'au redémarrage si les contrôles passent. Ce parcours combiné doit être qualifié physiquement avant publication de son script comme utilisable.
+7. Le futur installateur portable transférera le candidat et le lanceur manuel. L'activation vérifiera le stock, protégera le worker, armera le watchdog, vérifiera les mappings et le scanner après stabilisation, puis maintiendra le correctif jusqu'au redémarrage si les contrôles passent. Le pilote combiné a passé la qualification physique sur une seule console. Le script reste privé en attendant la revue de sécurité et l'intégration de la génération ART.
 8. Pour revenir au stock après une activation volatile, effectuer un redémarrage complet. Le retour stock et le rollback autonome ont été démontrés en V3.5-r3 et V3.6 ; ces essais ne qualifient pas la restauration d'une partition de démarrage.
 
 Ne pas utiliser les anciens scripts propres à la session de développement comme installateur public. Ne pas flasher de fichiers partagés, ne pas modifier AVB, ne pas changer de slot. En cas de problème, arrêter et conserver les preuves localement.
@@ -44,13 +44,19 @@ Ne pas utiliser les anciens scripts propres à la session de développement comm
 - V3.0 historique : activation manuelle jusqu'au redémarrage démontrée.
 - V3.5-r3 : nouveau candidat, scans 8/8, scanner 8/8, joignabilité IP 2/2, mappings ART et retour stock PASS.
 - V3.6 : rollback autonome après arrêt brutal du worker PASS.
-- Nouvelle Manual Edition combinée : à qualifier ; construction indépendante, portabilité, durcissement et usage prolongé restent à faire.
+- Manual Edition pilote : installation, activation, rejet de doublon et réactivation après redémarrage PASS. Portabilité, durcissement, désinstallation et usage prolongé restent à faire.
 
 Voir [la matrice](../compatibility/firmware-matrix.json), [les preuves](TEST_RESULTS.md) et [la récupération](RECOVERY_GATE.md).
 
 ### Avancement du constructeur
-Le constructeur autonome privé a été assemblé à partir des deux sources historiques vérifiées. Il ne dépend plus de l'archive historique ni du JAR V2. Contrôles locaux de syntaxe, intégrité DEX et empaquetage réussis ; reconstruction intégrale avec les outils verrouillés à effectuer avant publication. Le script d'activation portable reste à intégrer.
+Le constructeur autonome privé a été assemblé à partir des deux sources historiques vérifiées. Il ne dépend plus de l'archive historique ni du JAR V2. Contrôles locaux de syntaxe, intégrité DEX et empaquetage réussis ; reconstruction intégrale avec les versions de référence réussie en privé. Le script d'activation portable reste à intégrer.
 
 
 ### Reconstruction autonome validée
-Un build WSL complet a produit exactement le JAR et le DEX qualifiés, sans archive ni ancien JAR. Le prototype privé de lanceur manuel réutilisable est prêt pour qualification physique ; il installe des fichiers locaux, sans activation automatique au démarrage. Le constructeur public, la génération ART portable et l'installateur complet restent à publier après revue et essais. Aucun nouveau cycle de huit scans requis pour les artefacts identiques.
+Un build WSL complet a produit exactement le JAR et le DEX qualifiés, sans archive ni ancien JAR. Le prototype privé de lanceur manuel réutilisable a passé la qualification physique ; il installe des fichiers locaux, sans activation automatique au démarrage. Le constructeur public, la génération ART portable et l'installateur complet restent à publier après revue et essais. Aucun nouveau cycle de huit scans requis pour les artefacts identiques.
+
+
+## Utilisation après installation du pilote (déjà testé en privé)
+Après un redémarrage complet, lancer le même fichier Enable depuis les paramètres AYN, une seule fois. Sauvegarder les parties avant activation : le framework Android redémarre. Attendre la fin du contrôle de disponibilité (environ 70 s observées). Le correctif reste actif jusqu'au prochain redémarrage complet ; aucun PC n'est requis pour cette activation. Pour revenir au stock, redémarrer et ne pas relancer Enable. Cela désactive le correctif mais ne supprime pas les fichiers locaux. La désinstallation complète reste à qualifier. Ne pas lancer sur un firmware différent après OTA.
+
+Les deux activations ont passé les contrôles ART et de scan (9,13 s et 9,14 s) ; le second lancement dans le même boot a été rejeté sans changement du framework. Le redémarrage a conservé l'installation et restauré le stock. Le même lanceur a réactivé le correctif sans transfert. Ce parcours n'est pas encore disponible comme téléchargement public autonome. Aucun firmware complet n'est nécessaire à l'édition manuelle.
