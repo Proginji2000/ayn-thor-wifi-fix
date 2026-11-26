@@ -1,19 +1,22 @@
-# AYN Thor Wi-Fi runtime PM workaround
+# AYN Thor Wi-Fi Fix
 
 [Français](README.fr.md)
 
-**Experimental — one successful recovery, not a proven permanent fix.**
+**Experimental — runtime recovery tested; permanent installation not yet qualified.**
 
-On an AYN Thor running Android 13 firmware `Thor_V1.0.0.377_20260206_165408_user`, the Qualcomm kernel driver completed scans while Android's scanner remained stuck. Keeping the Wi-Fi PCI device runtime-active and subsequently restarting the Android framework restored 17 scan results, association and Internet access.
+On a single AYN Thor running Android 13 firmware `Thor_V1.0.0.377_20260206_165408_user`, repeated stock diagnostics identified an unresponsive Android Wi-Fi scanner during scan-result parsing. The historical Java correction V2 has been tested on the device with its matching ART artifacts and stock PCI runtime power management (auto). V3.0 provides manual volatile activation; a full reboot returns to stock. Keeping the PCI device active alone is not a demonstrated permanent solution.
 
-The runtime PM change alone did not recover an already stuck scanner. Automatic startup, long-term prevention and battery impact are not qualified.
+V3.3-r3 produces identical JARs in two complete local builds, with all 3138 disassembled classes matching the historical candidate. Its binary differs from V2; native ART and runtime qualification of the new build are pending. It is offline-only, not approved for installation.
 
 ## Documentation
+- [Current development handoff](docs/HANDOFF.md)
 - [Field evidence and limitations](docs/TEST_RESULTS.md)
-- [Persistence qualification plan](docs/PERSISTENCE_PLAN.md)
-- [Draft upstream report](docs/UPSTREAM_REPORT.md)
+- [Firmware compatibility matrix](compatibility/firmware-matrix.json)
+- [Persistence and lifecycle plan](docs/PERSISTENCE_PLAN.md)
+- [Draft upstream report (not submitted)](docs/UPSTREAM_REPORT.md)
+- [Agent instructions](AGENTS.md)
 
-## Safety
-Only the exact tested firmware and PCI identity (17cb:1107 at 0000:01:00.0) are in scope. This uses the manufacturer's stock root script facility. No flash, partition modification or SELinux change is proposed. Runtime PM changes may increase power use. Framework restart closes apps: save games first. Restore the original power policy (auto) if adverse effects occur.
+## Safety and scope
+Only the exact tested firmware is in scope. Unknown firmware or OTA changes must fail closed. No permanent installation, partition restoration or automatic boot activation is qualified. No partition flash has been performed. The project aims for a maintainable and reversible fix, preferably integrated by the vendor; do not redistribute proprietary firmware. No stable release is available. Historical recovery experiments are not installation instructions.
 
 Reference: [JoelMomo/AYN-Thor-WiFi-Recovery](https://github.com/JoelMomo/AYN-Thor-WiFi-Recovery), which motivated the diagnostic work. No upstream affiliation implied.
