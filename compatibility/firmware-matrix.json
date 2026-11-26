@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "default_policy": "deny_activation",
+  "firmwares": [
+    {
+      "build_id": "Thor_V1.0.0.377_20260206_165408_user",
+      "device": "kalama",
+      "android_api": 33,
+      "status": "experimental_runtime_only",
+      "permanent_install_allowed": false,
+      "artifacts": [
+        {
+          "name": "service-wifi.jar",
+          "path": "/apex/com.android.wifi/javalib/service-wifi.jar",
+          "stock_sha256": "69884bb5f83314f50a5b3fd41bf5119f07969c5a7c48c97b78dde9757f811b90",
+          "candidate_sha256": "a2f7bc1613bbe37b51a62cff102421265d21a2448455ce060c3657e1fbcc495f"
+        },
+        {
+          "name": "service-wifi.odex",
+          "path": "/system/framework/oat/arm64/apex@com.android.wifi@javalib@service-wifi.jar@classes.odex",
+          "stock_sha256": "7971686d28f65667babd88fde342b53042329d3ebff2b93f29f8852ef31522bc",
+          "candidate_sha256": "472a3558b3c8b1aa62356af2d075fc22707f18df8fcd318a004bd31363c911e5"
+        },
+        {
+          "name": "service-wifi.vdex",
+          "path": "/system/framework/oat/arm64/apex@com.android.wifi@javalib@service-wifi.jar@classes.vdex",
+          "stock_sha256": "ac1f5485bd33fffb69f7c32bfae7c82ef3eccc0f117c0ad1cdc7a2140eeccba5",
+          "candidate_sha256": "6cec72e372ffaca07d5ac54eae79783b0b597ef0b362d27ba87192443bc21ed2"
+        }
+      ],
+      "qualification": {
+        "stock_defect_reproduced": true,
+        "runtime_candidate_tested": true,
+        "fastboot_transport_tested": true,
+        "partition_restore_tested": false,
+        "reproducible_build_qualified": false,
+        "automatic_boot_qualified": false,
+        "extended_stability_qualified": false
+      },
+      "evidence": "docs/TEST_RESULTS.md"
+    }
+  ]
+}
