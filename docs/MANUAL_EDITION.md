@@ -59,3 +59,5 @@ Both manual activations passed ART mapping, fresh scan (9.13 s and 9.14 s) and I
 
 ## RC2 — release engineering
 Private kit combines standalone builder, portable ART compiler, hardened pilot and reversible uninstall. 30 local checks PASS; no new Android execution. Public [manual_verify_bundle.py](../tools/manual_verify_bundle.py) checks the exact tuple offline: `python3 tools/manual_verify_bundle.py path-to-bundle`. It does not build, transfer or activate anything. Complete kit stays private pending ART output repeatability, bootstrap, uninstall and security review. Full firmware not required for Manual Edition.
+
+RC2 physical trial: native compilation and ART metadata PASS, exact VDEX, differing ODEX. Strict bundle gate refused the output; active system unchanged. Offline binary comparison required before distribution; no recompilation required for this analysis.

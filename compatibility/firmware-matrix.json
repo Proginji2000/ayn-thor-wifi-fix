@@ -151,15 +151,27 @@
           "physical_devices_tested": 1
         },
         "manual_rc2_evidence": {
-          "status": "host_checks_pass_device_pending",
+          "status": "portable_art_compile_pass_exact_odex_mismatch",
           "local_checks_pass": 30,
           "worker_unchanged": true,
           "enable_unchanged": true,
-          "portable_art_physical_tested": false,
+          "portable_art_physical_tested": true,
           "hardened_bootstrap_physical_tested": false,
           "uninstall_physical_tested": false,
           "public_offline_bundle_verifier": true,
-          "public_installer_available": false
+          "public_installer_available": false,
+          "portable_art_evidence": {
+            "native_compile_pass": true,
+            "art_metadata_pass": true,
+            "system_unchanged": true,
+            "scanner_before_after_responsive": true,
+            "jar_exact_match": true,
+            "vdex_exact_match": true,
+            "odex_exact_match": false,
+            "observed_odex_sha256": "9a77b3aa411d3d799c30103d54881c35a109637147f96becd58d4533fb8ec0fa",
+            "host_rc": 1,
+            "alternate_bundle_approved": false
+          }
         }
       }
     }

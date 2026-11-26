@@ -64,3 +64,5 @@ Les deux activations ont passé les contrôles ART et de scan (9,13 s et 9,14 s)
 
 ## RC2 — préparation de distribution
 Le kit privé réunit le constructeur, la compilation ART portable, le pilote durci et la désinstallation réversible. 30 contrôles locaux PASS ; aucune nouvelle exécution Android. Le vérificateur public [manual_verify_bundle.py](../tools/manual_verify_bundle.py) vérifie hors ligne le triplet exact : `python3 tools/manual_verify_bundle.py chemin-du-bundle`. Il ne construit, ne transfère ni n'active le correctif. Le kit complet reste privé en attendant la qualification ART reproductible, le nouvel amorçage, le retrait et la revue de sécurité. Aucun firmware complet requis pour la Manual Edition.
+
+Essai physique RC2 : compilation native et contrôles ART réussis, VDEX identique, ODEX différent. Le contrôle strict a refusé le bundle. Système actif inchangé. Analyse binaire hors ligne requise avant distribution ; aucune nouvelle compilation nécessaire pour cette analyse.
