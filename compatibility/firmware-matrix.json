@@ -170,7 +170,20 @@
             "odex_exact_match": false,
             "observed_odex_sha256": "9a77b3aa411d3d799c30103d54881c35a109637147f96becd58d4533fb8ec0fa",
             "host_rc": 1,
-            "alternate_bundle_approved": false
+            "alternate_bundle_approved": false,
+            "offline_comparison": {
+              "identical_executable_section": true,
+              "only_differing_elf_section": ".rodata",
+              "differing_bytes": 698,
+              "differing_ranges": 14,
+              "total_bytes": 12839416,
+              "header_dump_diff": [
+                "location",
+                "checksum",
+                "dex2oat-cmdline temporary paths"
+              ],
+              "exhaustive_metadata_only_proof": false
+            }
           }
         }
       }
