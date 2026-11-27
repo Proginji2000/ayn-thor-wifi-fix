@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "v43_recurrence_and_guard_simulation_pass_disable_pending",
+        "status": "v43_disable_pass_uninstall_reinstall_pending",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -394,8 +394,11 @@
           "guard_stock_tuple_pass": true,
           "guard_last_good_preserved": true,
           "guard_pending_preserved": true,
-          "disable_qualified": false,
-          "uninstall_qualified": false
+          "disable_qualified": true,
+          "uninstall_qualified": false,
+          "disable_stock_tuple_pass": true,
+          "disable_evidence_preserved": true,
+          "final_reinstall_qualified": false
         }
       }
     }
