@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "v43_recurrent_boot_pass_guard_simulation_pending",
+        "status": "v43_recurrence_and_guard_simulation_pass_disable_pending",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -389,7 +389,13 @@
           "second_boot_pci_auto": true,
           "second_boot_start_uptime_s": 3.5,
           "second_boot_end_uptime_s": 3.79,
-          "guard_simulation_physical_pass": false
+          "guard_simulation_physical_pass": true,
+          "guard_skip_pass": true,
+          "guard_stock_tuple_pass": true,
+          "guard_last_good_preserved": true,
+          "guard_pending_preserved": true,
+          "disable_qualified": false,
+          "uninstall_qualified": false
         }
       }
     }
