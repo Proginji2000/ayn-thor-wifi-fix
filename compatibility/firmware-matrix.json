@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p4_r2_one_shot_lifecycle_pass_v43_prepared",
+        "status": "v43_first_boot_pass_recurrence_pending",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -367,10 +367,21 @@
           "hash_rejection_pass": true,
           "collision_rejection_pass": true,
           "synthetic_state_cases_pass": 6,
-          "physical_tested": false,
+          "physical_tested": true,
           "recurrence_qualified": false,
           "interrupted_boot_recovery_qualified": false,
-          "partition_writes": false
+          "partition_writes": false,
+          "first_boot_pass": true,
+          "module_sha256": "166542683ca4814ac547d7315bdb31af2880556846b58c6d1fe0e372b53b4f35",
+          "pending_armed": true,
+          "early_mounts_pass": true,
+          "start_uptime_s": 3.76,
+          "end_uptime_s": 4.05,
+          "health_checks_pass": 2,
+          "health_commit_pass": true,
+          "pending_absent_after_commit": true,
+          "last_good_current_boot": true,
+          "wifi_service_present": true
         }
       }
     }
