@@ -215,6 +215,16 @@
             "existing_remote_directory_reuse_allowed": false
           }
         }
+      },
+      "permanent_edition": {
+        "status": "design_selected_image_preparation_pending",
+        "candidate_framework": "Magisk",
+        "framework_installed": false,
+        "image_preparation_qualified": false,
+        "independent_recovery_qualified": false,
+        "boot_write_allowed": false,
+        "automatic_activation_qualified": false,
+        "plan": "docs/PERMANENT_EDITION.md"
       }
     }
   ]

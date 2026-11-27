@@ -19,3 +19,7 @@ No vendor contact or package download has been performed by this update. No bina
 
 ## Alternative recovery route
 Full firmware is a fallback, not a mandatory dependency for a temporary manual patch. For a proposed narrowly scoped boot modification, a verified exact original partition image and an independently usable restoration method may suffice, subject to review of all partitions affected, bootloader behavior, failure modes and explicit write authorization. Existing init_boot backups and Fastboot transport alone do not establish successful restoration. See official Magisk installation guidance (https://topjohnwu.github.io/Magisk/install) and safe-mode FAQ (https://topjohnwu.github.io/Magisk/faq.html) for candidate mechanisms, not Thor-specific qualification. The vendor recovery request has been sent by the user; no response or media verified yet.
+
+
+## P0 image-only preparation (2026-11-27)
+Both exact local init_boot backups already parsed and hashed in V3.2. Active slot-a backup SHA256 fd3ad6ea2cf36aecec54d3ce1abc5239d06d21557e64db50224010ebda220afe, 8388608 bytes. Slot b differs; do not interchange. Official Magisk app image-only preparation is separate from flashing and may proceed from local backup with current device/build/slot verification. No partition write approved. Full firmware request remains pending; targeted recovery route still requires independent review and explicit approval. See PERMANENT_EDITION.md.
