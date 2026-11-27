@@ -63,3 +63,7 @@ RC2 lifecycle qualification BLOCKED (2026-11-26). User transcript confirms full 
 
 ## 2026-11-27 — Permanent Edition priority
 See PERMANENT_EDITION.md for staged P0–P5. Next P0 image-only Magisk preparation from verified local slot-a backup. Existing recovery and activation evidence retained. No flash/reboot or security changes authorized. RC1 remains owner fallback.
+
+
+## P0 — Image collection
+P0 collection PASS (2026-11-27): user transcript confirms exact .377 firmware and slot a, local stock init_boot_a 8388608 bytes and qualified SHA256 verified, USB input transfer verified. Magisk app reports file patch completed per owner, output magisk_patched-31100_aGZB9.img retrieved and remote/local SHA256 matched dc3240bec726b52c4fdb15def4cbaef0c7e83b44ae1b1cc0d82fc7e77f2756cf, size 8388608. Installed app versionName 31.1 versionCode 31100 (package metadata, not independent APK authenticity proof). No partition flash reported. P0 binary/ramdisk/AVB metadata review still pending; same size is not proof of bootability. Next private offline comparison of exact stock and patched images; no device reboot or partition write. P1 independent recovery and explicit authorization remain required.

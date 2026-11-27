@@ -217,14 +217,19 @@
         }
       },
       "permanent_edition": {
-        "status": "design_selected_image_preparation_pending",
+        "status": "p0_image_collected_offline_review_pending",
         "candidate_framework": "Magisk",
         "framework_installed": false,
         "image_preparation_qualified": false,
         "independent_recovery_qualified": false,
         "boot_write_allowed": false,
         "automatic_activation_qualified": false,
-        "plan": "docs/PERMANENT_EDITION.md"
+        "plan": "docs/PERMANENT_EDITION.md",
+        "image_collection_pass": true,
+        "magisk_app_version": "31.1",
+        "patched_image_sha256": "dc3240bec726b52c4fdb15def4cbaef0c7e83b44ae1b1cc0d82fc7e77f2756cf",
+        "patched_image_size": 8388608,
+        "binary_review_pass": false
       }
     }
   ]

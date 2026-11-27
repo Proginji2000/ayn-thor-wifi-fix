@@ -26,3 +26,7 @@ Select earliest demonstrated safe point. Exact build and original/qualified arti
 Repeated cold/warm boot, mappings, Wi-Fi readiness, sleep/wake, HTTPS, extended use, unsupported OTA refusal, module disable/uninstall and independent recovery. Public source and scripts only, no proprietary images or trigger details. Coordinate disclosure. Manual Edition RC2 remains a separate unqualified release-engineering task.
 
 No new physical tests performed in this update. No flash command, root module or boot-writing tool delivered. Current device state after owner reported RC1 re-enable has not been independently remeasured.
+
+
+## P0 — Image collection
+P0 collection PASS (2026-11-27): user transcript confirms exact .377 firmware and slot a, local stock init_boot_a 8388608 bytes and qualified SHA256 verified, USB input transfer verified. Magisk app reports file patch completed per owner, output magisk_patched-31100_aGZB9.img retrieved and remote/local SHA256 matched dc3240bec726b52c4fdb15def4cbaef0c7e83b44ae1b1cc0d82fc7e77f2756cf, size 8388608. Installed app versionName 31.1 versionCode 31100 (package metadata, not independent APK authenticity proof). No partition flash reported. P0 binary/ramdisk/AVB metadata review still pending; same size is not proof of bootability. Next private offline comparison of exact stock and patched images; no device reboot or partition write. P1 independent recovery and explicit authorization remain required.
