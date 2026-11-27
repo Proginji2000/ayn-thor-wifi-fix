@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p4_r1_diagnostic_trial_prepared",
+        "status": "p4_r1_pci_precheck_stop_r2_prepared",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -312,6 +312,28 @@
             "wrong_hash_rejection_pass": true,
             "collision_rejection_pass": true,
             "marker_before_prechecks_static_pass": true,
+            "physical_tested": true,
+            "one_shot_consumed": true,
+            "precheck_pass": false,
+            "failed_step": "PCI_MODE",
+            "observed_early_pci": "on",
+            "expected_early_pci": "auto",
+            "stock_boot_pass": true,
+            "candidate_activation_pass": false
+          },
+          "r2": {
+            "generator_sha256": "0561513670916e143c81099c025c4233ed004f615f60689b7fdeaaaa788c7b7c",
+            "module_id": "thor_wifi_trial_r2",
+            "early_pci_allowed": [
+              "on",
+              "auto"
+            ],
+            "pci_writes": false,
+            "syntax_pass": true,
+            "policy_cases_pass": 5,
+            "synthetic_packaging_pass": true,
+            "wrong_hash_rejection_pass": true,
+            "collision_rejection_pass": true,
             "physical_tested": false
           }
         }
