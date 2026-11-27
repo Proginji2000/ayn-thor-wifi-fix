@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p4_r2_functional_pass_next_boot_skip_pending",
+        "status": "p4_r2_one_shot_lifecycle_pass_v43_prepared",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -349,13 +349,28 @@
             "late_pci": "auto",
             "wifi_service_present": true,
             "fresh_scan_pass": true,
-            "next_boot_skip_qualified": false,
+            "next_boot_skip_qualified": true,
             "module_sha256": "61b72633d2c81bec3df6e14eaf301049a784f7bcbe4c07c6c89ff6cd566ef66a",
             "reported_functional_passes_same_boot": 2,
             "fresh_results_per_scan": 12,
             "ip_probe_pass": true,
-            "framework_stability_pass": true
+            "framework_stability_pass": true,
+            "normal_reboot_stock_restore_pass": true,
+            "prior_evidence_preserved": true
           }
+        },
+        "recurring_v43": {
+          "generator_sha256": "360e5ccd9d429b2d41452c82700164ee77fb55de159c593f3bb9a6e4694c0830",
+          "module_id": "thor_wifi_v43",
+          "host_syntax_pass": true,
+          "synthetic_zip_pass": true,
+          "hash_rejection_pass": true,
+          "collision_rejection_pass": true,
+          "synthetic_state_cases_pass": 6,
+          "physical_tested": false,
+          "recurrence_qualified": false,
+          "interrupted_boot_recovery_qualified": false,
+          "partition_writes": false
         }
       }
     }
