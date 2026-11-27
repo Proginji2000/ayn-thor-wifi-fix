@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p2_first_boot_pass_root_authorization_pending",
+        "status": "p2_initial_baseline_pass_p3_observer_prepared",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -253,10 +253,21 @@
         },
         "flash_confirmed": true,
         "first_boot_pass": true,
-        "root_access_qualified": false,
-        "framework_only_qualified": false,
+        "root_access_qualified": true,
+        "framework_only_qualified": true,
         "verified_boot_state": "orange",
-        "wifi_baseline_qualified": false
+        "wifi_baseline_qualified": true,
+        "stock_tuple_verified": true,
+        "selinux_observed": "Permissive",
+        "modules_empty": true,
+        "observer": {
+          "zip_sha256": "553705a1983b9ebf66f2b517cd59800aca955cf332e9c7f1d4cbc5ed6b84dcaa",
+          "host_syntax_pass": true,
+          "zip_crc_pass": true,
+          "physical_tested": false,
+          "system_mounts": false,
+          "automatic_wifi_activation": false
+        }
       }
     }
   ]
