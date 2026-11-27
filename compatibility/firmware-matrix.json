@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p3_observer_pass_p4_one_shot_trial_prepared",
+        "status": "p4_precheck_stop_stock_boot_pass",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -283,8 +283,20 @@
           "synthetic_packaging_pass": true,
           "wrong_payload_rejection_pass": true,
           "output_collision_rejection_pass": true,
-          "physical_tested": false,
-          "repeated_auto_activation_qualified": false
+          "physical_tested": true,
+          "repeated_auto_activation_qualified": false,
+          "automatic_execution_pass": true,
+          "exact_payload_packaging_pass": true,
+          "usb_transfer_pass": true,
+          "module_sha256": "a05baa22c24b88e523b80fa3d99e15da4f0879774c2e87ae823b01144e575dc6",
+          "precheck_pass": false,
+          "failed_predicate_identified": false,
+          "android_boot_pass": true,
+          "stock_tuple_verified": true,
+          "stock_art_mappings_verified": true,
+          "candidate_activation_pass": false,
+          "precheck_failure_consumes_trial": false,
+          "disable_before_next_boot_recommended": true
         }
       }
     }
