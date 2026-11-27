@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p4_r1_pci_precheck_stop_r2_prepared",
+        "status": "p4_r2_early_activation_pass_functional_and_skip_pending",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -334,7 +334,23 @@
             "synthetic_packaging_pass": true,
             "wrong_hash_rejection_pass": true,
             "collision_rejection_pass": true,
-            "physical_tested": false
+            "physical_tested": true,
+            "precheck_pass": true,
+            "one_shot_consumed": true,
+            "early_mounts_pass": true,
+            "start_uptime_s": 3.69,
+            "end_uptime_s": 3.97,
+            "android_boot_pass": true,
+            "system_server_candidate_tuple_pass": true,
+            "executable_odex_mapping_observed": true,
+            "vdex_mapping_observed": true,
+            "explicit_mapping_identity_pass": false,
+            "early_pci": "on",
+            "late_pci": "auto",
+            "wifi_service_present": true,
+            "fresh_scan_pass": false,
+            "next_boot_skip_qualified": false,
+            "module_sha256": "61b72633d2c81bec3df6e14eaf301049a784f7bcbe4c07c6c89ff6cd566ef66a"
           }
         }
       }
