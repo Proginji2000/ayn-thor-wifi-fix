@@ -217,9 +217,9 @@
         }
       },
       "permanent_edition": {
-        "status": "p2_owner_authorized_single_init_boot_a_trial_execution_pending",
+        "status": "p2_first_boot_pass_root_authorization_pending",
         "candidate_framework": "Magisk",
-        "framework_installed": false,
+        "framework_installed": true,
         "image_preparation_qualified": false,
         "independent_recovery_qualified": false,
         "boot_write_allowed": false,
@@ -238,7 +238,7 @@
           "patched_hash_descriptor_pass": false,
           "vbmeta_identical": true,
           "flags_unchanged": true,
-          "bootloader_acceptance_qualified": false
+          "bootloader_acceptance_qualified": true
         },
         "hardware_key_fastboot_qualified": true,
         "native_fastboot_check_pass": true,
@@ -251,7 +251,12 @@
           "stock_restore_if_needed": true,
           "other_partition_writes": false
         },
-        "flash_confirmed": false
+        "flash_confirmed": true,
+        "first_boot_pass": true,
+        "root_access_qualified": false,
+        "framework_only_qualified": false,
+        "verified_boot_state": "orange",
+        "wifi_baseline_qualified": false
       }
     }
   ]
