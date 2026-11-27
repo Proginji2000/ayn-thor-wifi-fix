@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p4_r2_early_activation_pass_functional_and_skip_pending",
+        "status": "p4_r2_functional_pass_next_boot_skip_pending",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -344,13 +344,17 @@
             "system_server_candidate_tuple_pass": true,
             "executable_odex_mapping_observed": true,
             "vdex_mapping_observed": true,
-            "explicit_mapping_identity_pass": false,
+            "explicit_mapping_identity_pass": true,
             "early_pci": "on",
             "late_pci": "auto",
             "wifi_service_present": true,
-            "fresh_scan_pass": false,
+            "fresh_scan_pass": true,
             "next_boot_skip_qualified": false,
-            "module_sha256": "61b72633d2c81bec3df6e14eaf301049a784f7bcbe4c07c6c89ff6cd566ef66a"
+            "module_sha256": "61b72633d2c81bec3df6e14eaf301049a784f7bcbe4c07c6c89ff6cd566ef66a",
+            "reported_functional_passes_same_boot": 2,
+            "fresh_results_per_scan": 12,
+            "ip_probe_pass": true,
+            "framework_stability_pass": true
           }
         }
       }
