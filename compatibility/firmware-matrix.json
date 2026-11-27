@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "p2_initial_baseline_pass_p3_observer_prepared",
+        "status": "p3_observer_pass_p4_one_shot_trial_prepared",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -264,9 +264,27 @@
           "zip_sha256": "553705a1983b9ebf66f2b517cd59800aca955cf332e9c7f1d4cbc5ed6b84dcaa",
           "host_syntax_pass": true,
           "zip_crc_pass": true,
-          "physical_tested": false,
+          "physical_tested": true,
           "system_mounts": false,
-          "automatic_wifi_activation": false
+          "automatic_wifi_activation": false,
+          "physical_pass": true,
+          "early_snapshot_uptime_s": 3.33,
+          "zygote_start_s": 3.751621194,
+          "system_server_first_seen_s": 7.09,
+          "boot_completed_first_seen_s": 19.67,
+          "apex_ready": true,
+          "paths_present": true,
+          "zygote_absent": true,
+          "init_mount_namespace_equal": true
+        },
+        "one_shot_trial": {
+          "generator_sha256": "2cd3b33392728be51620596923661b3c25a508c46a1e61d7e767109203383085",
+          "host_syntax_pass": true,
+          "synthetic_packaging_pass": true,
+          "wrong_payload_rejection_pass": true,
+          "output_collision_rejection_pass": true,
+          "physical_tested": false,
+          "repeated_auto_activation_qualified": false
         }
       }
     }
