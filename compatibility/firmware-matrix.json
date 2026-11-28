@@ -709,13 +709,13 @@
       "owner_v43_reactivation_early_mount_end_uptime_seconds": 3.61
     },
     "manual_rc4": {
-      "status": "android_inert_pass_owner_storage_cycle_prepared",
+      "status": "owner_stock_storage_cycle_pass_clean_install_and_activation_unqualified",
       "native_no_magisk": {
         "status": "blocked",
         "vendor_execution_contract_required": true
       },
       "adb_assisted_existing_authorized_root": {
-        "status": "owner_storage_cycle_prepared_not_physically_qualified",
+        "status": "owner_storage_cycle_pass_clean_install_unqualified",
         "replaces_native_objective": false,
         "offline_fault_qualification_required": true,
         "physical_qualification_required": true
@@ -757,10 +757,18 @@
         "local_mock_lifecycle_pass": true,
         "local_mock_rejection_cases_pass": 3,
         "parser_rejection_cases_pass": 2,
-        "physical_tested": false,
+        "physical_tested": true,
         "activation_tested": false,
         "clean_device_install_qualified": false,
-        "deployment_allowed": false
+        "deployment_allowed": false,
+        "physical_storage_cycle_pass": true,
+        "ordered_success_markers_pass": 9,
+        "adb_rc": 0,
+        "legacy_restored_pass": true,
+        "stock_final_pass": true,
+        "recovery_qualified": false,
+        "owner_v43_restoration_observed": false,
+        "independent_postcondition_session_qualified": false
       }
     }
   }
