@@ -612,8 +612,17 @@
         "generated_shell_syntax_pass": 2,
         "generated_max_line_bytes": 119,
         "local_mock_child_exit23_stdout_pass": true,
-        "android_tested": false,
-        "activation_allowed": false
+        "android_tested": true,
+        "activation_allowed": false,
+        "physical_status": "fail",
+        "host_rc": 1,
+        "child_enter_observed": false,
+        "expected_exit23_observed": false,
+        "reported_child_rc": "empty",
+        "contradictory_stdout_markers": true,
+        "result_missing_marker_observed": true,
+        "stock_and_manual_unchanged_pass": true,
+        "launcher_implementation_confirmed": false
       }
     },
     "manual_rc3": {
@@ -649,7 +658,11 @@
       "uninstall_child_logs_observed": false,
       "uninstall_post_bootstrap_state_verified": true,
       "uninstall_effective_status": "fail",
-      "post_bootstrap_stock_three_namespaces_pass": true
+      "post_bootstrap_stock_three_namespaces_pass": true,
+      "native_bootstrap_empirical_trials_suspended": true,
+      "next_step": "read_only_launcher_implementation_identification",
+      "owner_v43_reactivation_recommended": true,
+      "owner_v43_reactivation_observed": false
     }
   }
 }
