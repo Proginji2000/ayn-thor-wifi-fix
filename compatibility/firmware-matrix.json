@@ -466,10 +466,23 @@
       "script_sha256": "e31cbadf0b0c8ead6298338c903a2f91de346ff77627c08daed7640d01f691d4",
       "bash_syntax_pass": true,
       "missing_input_rejection_pass": true,
-      "container_build_executed": false,
-      "isolated_rebuild_executed": false,
+      "container_build_executed": true,
+      "isolated_rebuild_executed": true,
       "independent_physical_host_qualified": false,
-      "portable_art_qualified": false
+      "portable_art_qualified": false,
+      "isolated_exact_jar_dex_pass": true,
+      "executable_hash_matches": 4,
+      "base_digest": "sha256:0d5255be560e2d2ddcfbfda88549e9e815ef29e7cd7fc62183d5709e6e2963c6",
+      "image_id": "37ef4963eb3b519cef82f30be36873ee74db218f3aa5c2b4be32f385520a9f13"
+    },
+    "fixed_art_trial": {
+      "generator_sha256": "32279820d32cc807ac514cb5abd778ee225891f6962d16e9881ac3c453c25ac4",
+      "host_shell_syntax_pass": true,
+      "embedded_shell_syntax_pass": true,
+      "local_directory_cases_pass": 3,
+      "physical_tested": false,
+      "existing_directory_reuse_allowed": false,
+      "exact_art_output_qualified": false
     }
   }
 }
