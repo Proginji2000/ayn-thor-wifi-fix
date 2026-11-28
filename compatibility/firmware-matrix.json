@@ -575,7 +575,27 @@
         "host_syntax_pass": true,
         "generated_shell_syntax_pass": 3,
         "local_mock_marker_sequences_pass": 3,
-        "android_tested": false,
+        "android_tested": true,
+        "activation_allowed": false,
+        "observed_markers": 11,
+        "expected_markers": 12,
+        "probe_a_observed": 4,
+        "probe_a_expected": 5,
+        "probe_b_pass": true,
+        "probe_c_pass": true,
+        "host_observation_rc": 0,
+        "v43_unchanged_pass": true,
+        "full_grammar_pass": false
+      },
+      "r3": {
+        "script_sha256": "e332937ebc36484dbf7f25ab1c1208e74a725f82a31c9b9190f195381444ecf2",
+        "host_syntax_pass": true,
+        "generated_shell_syntax_pass": true,
+        "generated_max_line_bytes": 152,
+        "line_limit_bytes": 180,
+        "physical_tested": false,
+        "copied_payload_execution": false,
+        "line_length_hypothesis": "near_256_bytes_unconfirmed",
         "activation_allowed": false
       }
     }
