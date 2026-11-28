@@ -217,7 +217,7 @@
         }
       },
       "permanent_edition": {
-        "status": "v43_disable_pass_uninstall_reinstall_pending",
+        "status": "v43_owner_lifecycle_pass_community_distribution_pending",
         "candidate_framework": "Magisk",
         "framework_installed": true,
         "image_preparation_qualified": false,
@@ -382,8 +382,8 @@
           "pending_absent_after_commit": true,
           "last_good_current_boot": true,
           "wifi_service_present": true,
-          "successful_distinct_boots": 2,
-          "total_health_checks_pass": 4,
+          "successful_distinct_boots": 3,
+          "total_health_checks_pass": 6,
           "second_boot_candidate_tuple_pass": true,
           "second_boot_ip_probe_pass": true,
           "second_boot_pci_auto": true,
@@ -395,10 +395,20 @@
           "guard_last_good_preserved": true,
           "guard_pending_preserved": true,
           "disable_qualified": true,
-          "uninstall_qualified": false,
+          "uninstall_qualified": true,
           "disable_stock_tuple_pass": true,
           "disable_evidence_preserved": true,
-          "final_reinstall_qualified": false
+          "final_reinstall_qualified": true,
+          "uninstall_stock_tuple_pass": true,
+          "all_five_project_modules_removed": true,
+          "final_reinstall_same_zip": true,
+          "final_reinstall_health_commit_pass": true,
+          "final_reinstall_start_uptime_s": 3.36,
+          "final_reinstall_end_uptime_s": 3.65,
+          "final_reinstall_external_tuple_check": false,
+          "only_permanent_module_remaining": true,
+          "owner_lifecycle_qualified": true,
+          "community_distribution_approved": false
         }
       }
     }
