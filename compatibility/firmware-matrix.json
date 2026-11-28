@@ -709,13 +709,13 @@
       "owner_v43_reactivation_early_mount_end_uptime_seconds": 3.61
     },
     "manual_rc4": {
-      "status": "offline_real_pass_android_sandbox_prepared",
+      "status": "android_inert_pass_owner_storage_cycle_prepared",
       "native_no_magisk": {
         "status": "blocked",
         "vendor_execution_contract_required": true
       },
       "adb_assisted_existing_authorized_root": {
-        "status": "offline_real_pass_android_adapter_not_implemented",
+        "status": "owner_storage_cycle_prepared_not_physically_qualified",
         "replaces_native_objective": false,
         "offline_fault_qualification_required": true,
         "physical_qualification_required": true
@@ -742,9 +742,24 @@
         "local_linux_sandbox_checks_pass": 8,
         "shell_syntax_checks_pass": 2,
         "negative_report_cases_pass": 3,
-        "android_tested": false,
+        "android_tested": true,
         "live_manual_adapter_qualified": false,
         "existing_authorized_root_only": true,
+        "deployment_allowed": false,
+        "android_checks_pass": 8,
+        "android_bench_pass": true,
+        "v43_and_legacy_manual_unchanged_pass": true
+      },
+      "storage_cycle": {
+        "script_sha256": "453f16bb436403f7369cd7bb0990e2690449c835ee83e0feb46bf23131761509",
+        "python_compile_pass": true,
+        "production_shell_syntax_pass": true,
+        "local_mock_lifecycle_pass": true,
+        "local_mock_rejection_cases_pass": 3,
+        "parser_rejection_cases_pass": 2,
+        "physical_tested": false,
+        "activation_tested": false,
+        "clean_device_install_qualified": false,
         "deployment_allowed": false
       }
     }
