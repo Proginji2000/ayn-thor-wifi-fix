@@ -625,8 +625,14 @@
         "launcher_implementation_confirmed": false
       },
       "launcher_identification": {
-        "status": "picker_only_caller_unconfirmed",
-        "implementation_confirmed": false
+        "status": "caller_confirmed_backend_unconfirmed",
+        "package": "com.odin.settings",
+        "activity": "com.ro.settings.activity.RunScriptActivity",
+        "uid": 1000,
+        "apk_path": "/system/app/OdinSettings/OdinSettings.apk",
+        "picker_action": "android.intent.action.GET_CONTENT",
+        "implementation_confirmed": false,
+        "local_apk_analysis_executed": false
       }
     },
     "manual_rc3": {
