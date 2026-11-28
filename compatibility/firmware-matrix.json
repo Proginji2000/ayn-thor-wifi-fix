@@ -535,13 +535,22 @@
       "embedded_shell_syntax_pass": true,
       "synthetic_report_cases_pass": 12,
       "zip_rejection_cases_pass": 2,
-      "installed_mode_device_tested": false,
+      "installed_mode_device_tested": true,
       "stock_mode_device_tested": false,
       "other_modules_supported": false,
       "global_scripts_supported": false,
       "mixed_module_rollback_qualified": false,
       "recovery_qualified": false,
-      "deployment_allowed": false
+      "deployment_allowed": false,
+      "installed_mode_device_pass": true,
+      "installed_mode_checks_pass": 25
+    },
+    "manual_native_diagnostic": {
+      "script_sha256": "159923c90bce560ba7716abc1cbd687ecc9de74cf7331abb8248a5cedb278bf3",
+      "host_syntax_pass": true,
+      "embedded_template_syntax_checks_pass": 2,
+      "physical_tested": false,
+      "activation_allowed": false
     }
   }
 }
