@@ -1,0 +1,44 @@
+# Community release engineering — 2026-11-28
+
+**STATUS: PARTIAL. Owner use: GO on the exact tested configuration. Public installation: NO-GO.** Manual and Permanent have separate gates; missing full recovery media must not block offline Manual engineering.
+
+## Baseline
+
+- Exact firmware: `Thor_V1.0.0.377_20260206_165408_user`, kalama/API 33/slot a; one physical console.
+- Manual RC1: reusable private pilot; hardened RC2 bootstrap and complete uninstall unqualified.
+- Permanent V4.3 RC1: private exact tuple, three corrected boots, six health checks, normal recurrence, guard-state simulation, disable/uninstall/reinstall PASS. Real boot failure recovery and physical init_boot restore untested.
+- Preserve exact qualified artifacts and immutable generator. Never repackage proprietary binaries in the repository, release assets or CI.
+- Public guides in English, French, Spanish, German, Simplified Chinese, Japanese, Korean and Russian. English is the canonical translation source. All translations are machine-generated drafts pending native/technical review; identical commands and technical literals. Update translations in the same change when possible.
+
+## Work packages and acceptance criteria
+
+| ID | Deliverable | Current status | Exit criteria |
+|---|---|---|---|
+| D01 | Current status and 8-language preview | PASS (drafts) | Links valid, scope/limits consistent; human review before stable release |
+| B01 | Standalone local build | PARTIAL | Exact JAR/DEX from user-owned stock on independent clean host, dependency provenance and immutable toolchain |
+| B02 | Native ART portability | BLOCKED | Exact JAR/ODEX/VDEX tuple from independent workflow, or separately reviewed and physically qualified metadata-only variant; no relaxed hash gate |
+| B03 | Shared offline pipeline | TODO | Explicit inputs, isolated outputs, no bundled proprietary files, no device activation by default, deterministic report, negative tests |
+| M01 | Manual community installer | BLOCKED | Resolve native privileged bootstrap and uninstall; prove stage integrity, watchdog, exact rollback, install/reuse on independent device |
+| P01 | Permanent community packaging | PARTIAL | Preserve tested boot scripts and strict tuple; review state-file safety, rollback failure, concurrent modules, early boot timeout, root prerequisites |
+| P02 | Recovery and compatibility | BLOCKED | Independently usable recovery route for each target, authenticated local backups, documented limitations; no automatic partition writes |
+| S01 | Security and licensing | TODO | Source/third-party license inventory; independent review; vendor coordination before detailed transformation disclosure |
+| Q01 | External qualification | TODO | At least one other compatible Thor, controlled consent, private redacted evidence; no new flash merely for testing |
+| R01 | Distribution | NO-GO | Each edition's relevant gates closed, published checksums, FR/EN + six translation reviews, explicit release decision |
+
+## Host inventory and current offline evidence
+
+Reference versions from the private qualified build: Python 3.14.4, zlib runtime 1.3.1, Java 21.0.13.1, smali/baksmali 2.5.2.git2771eae-debian, API 33, single job. These are observed version pins, not a complete dependency lock or independent reproducibility proof. Obtain verified tool package provenance before claiming portability.
+
+On 2026-11-28 the available private generator and standalone builder SHA256 values matched the recorded baseline. Python syntax (three tools), POSIX sh and Bash syntax (two V4.3 scripts), archive CRC and all six manifest file hashes, Bash syntax (two RC2 scripts) passed. No build from stock, physical compile, device modification or independent host test executed in this review. The available local JAR is a candidate, not the stock input; never substitute it for stock. The ODEX/VDEX pair and exact stock input are required from the owner's private workspace.
+
+## Release order
+
+1. Resolve B01/B02 offline, test isolated local construction, preserve strict exact verification.
+2. Review and package separate Manual and Permanent workflows using the same verified tuple. Manual needs no boot modification; Permanent requires independently established Magisk/recovery prerequisites.
+3. Test rejection paths and independent clean host; document missing prerequisites and abort behavior.
+4. Coordinate vendor disclosure privately, review licensing and source security, qualify a compatible independent device with consent.
+5. Publish a candidate release only after applicable gates pass. Keep preview docs accessible meanwhile.
+
+## Operations boundaries
+
+No change to the owner's working V4.3 installation. No repeated routine physical scans, boot trials, flashes, forced power cuts, shared boot images, firmware uploads or detailed defect trigger publication. No new hardware qualification claimed by this document. A future independent trial may be needed only for a changed input or genuinely untested path. Keep historical logs as evidence, but current status here and the current matrix take precedence.

@@ -1,5 +1,7 @@
 # Manual Edition — guide expérimental (préversion documentaire)
 
+**Current status (2026-11-28):** historical evidence below is retained. V4.3 RC1 owner lifecycle is qualified; public installer and independent recovery remain unqualified. See [community release gates](COMMUNITY_RELEASE.md) and [community guides](community/en.md).
+
 **Disponibilité : précontrôle et extraction locale uniquement. Le parcours d'activation complet n'est pas encore publiable comme installateur utilisable.**
 
 ## Objectif

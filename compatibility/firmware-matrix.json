@@ -409,8 +409,40 @@
           "only_permanent_module_remaining": true,
           "owner_lifecycle_qualified": true,
           "community_distribution_approved": false
+        },
+        "current_qualification": {
+          "scope": "single_owner_device_exact_build_slot_a",
+          "automatic_activation_qualified": true,
+          "owner_lifecycle_qualified": true,
+          "public_distribution_approved": false,
+          "independent_recovery_qualified": false,
+          "physical_init_boot_restore_qualified": false,
+          "qualified_corrected_boots": 3,
+          "health_checks_pass": 6,
+          "prior_top_level_fields": "Historical/general release gates; not a denial of the bounded owner activation evidence."
         }
       }
     }
-  ]
+  ],
+  "community_release": {
+    "status": "preview_docs_only",
+    "public_installer_available": false,
+    "public_distribution_approved": false,
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "de",
+      "zh-CN",
+      "ja",
+      "ko",
+      "ru"
+    ],
+    "translation_status": "machine_generated_draft_review_pending",
+    "canonical_language": "en",
+    "plan": "docs/COMMUNITY_RELEASE.md",
+    "owner_device_changes": false,
+    "independent_host_build_qualified": false,
+    "portable_art_qualified": false
+  }
 }

@@ -1,29 +1,33 @@
 # AYN Thor Wi-Fi Fix
 
-[Français](README.fr.md)
+[English](docs/community/en.md) · [Français](docs/community/fr.md) · [Español](docs/community/es.md) · [Deutsch](docs/community/de.md) · [简体中文](docs/community/zh-CN.md) · [日本語](docs/community/ja.md) · [한국어](docs/community/ko.md) · [Русский](docs/community/ru.md)
 
-**Experimental — runtime recovery tested; permanent installation not yet qualified.**
+**Private device qualification PASS — public installer not yet available.**
 
-On a single AYN Thor running Android 13 firmware `Thor_V1.0.0.377_20260206_165408_user`, repeated stock diagnostics identified an unresponsive Android Wi-Fi scanner during scan-result parsing. The historical Java correction V2 has been tested on the device with its matching ART artifacts and stock PCI runtime power management (auto). V3.0 provides manual volatile activation; a full reboot returns to stock. Keeping the PCI device active alone is not a demonstrated permanent solution.
+An independent project for a reproducible, reversible Wi-Fi correction. Only one AYN Thor, `Thor_V1.0.0.377_20260206_165408_user` (kalama, Android 13 / API 33, slot a), has been qualified.
 
-V3.3-r3 produces identical JARs in two complete local builds, with all 3138 disassembled classes matching the historical candidate. Its binary differs from V2; native ART and strict volatile scan qualification passed (V3.5-r3, 8/8). Autonomous rollback after forced worker termination passed (V3.6). Permanent installation and stable distribution remain unapproved.
+| Edition | Private evidence | Community availability |
+|---|---|---|
+| Manual RC1 | Reusable activation after boot; runtime and reboot rollback passed | Read-only preflight and offline verifier only |
+| Permanent V4.3 RC1 | Magisk 31.1; 3 corrected boots, 6 health checks, recurrence, guard-state simulation, disable, uninstall and reinstall passed | Private module; no public installer |
 
-## Manual Edition — community preparation
-- [Experimental tutorial and availability](docs/MANUAL_EDITION.md)
-- [Read-only preflight and stock extraction script](tools/manual_preflight.py)
+Start with the [community guide](docs/community/en.md). The eight-language guides are documentation previews, not installation authorization.
+
+## Available tools
+- [Read-only compatibility and stock extraction](tools/manual_preflight.py)
 - [Offline exact-bundle verification](tools/manual_verify_bundle.py)
 
-Standalone candidate generation passed privately on the original WSL environment; the manual pilot passed installation, duplicate rejection and reuse after reboot. Builder and launcher remain private; the complete public portable installer is not yet available.
-
-## Documentation
+## Technical documentation
+- [Community release gates](docs/COMMUNITY_RELEASE.md)
 - [Current development handoff](docs/HANDOFF.md)
-- [Field evidence and limitations](docs/TEST_RESULTS.md)
-- [Firmware compatibility matrix](compatibility/firmware-matrix.json)
-- [Persistence and lifecycle plan](docs/PERSISTENCE_PLAN.md)
-- [Draft upstream report (not submitted)](docs/UPSTREAM_REPORT.md)
-- [Agent instructions](AGENTS.md)
+- [Field evidence](docs/TEST_RESULTS.md)
+- [Firmware matrix](compatibility/firmware-matrix.json)
+- [Manual Edition history](docs/MANUAL_EDITION.md)
+- [Permanent Edition history](docs/PERMANENT_EDITION.md)
+- [Recovery gate](docs/RECOVERY_GATE.md)
+- [Upstream report draft](docs/UPSTREAM_REPORT.md)
 
-## Safety and scope
-Only the exact tested firmware is in scope. Unknown firmware or OTA changes must fail closed. No permanent installation, partition restoration or automatic boot activation is qualified. No partition flash has been performed. The project aims for a maintainable and reversible fix, preferably integrated by the vendor; do not redistribute proprietary firmware. No stable release is available. Historical recovery experiments are not installation instructions.
+## Safety
+Do not combine editions. Unknown firmware or OTA changes must fail closed. The private Magisk trial involved a narrowly authorized boot-partition write on the owner's device; V4.3 itself does not write boot partitions. Normal Wi-Fi stock rollback does not restore root or boot partitions. Actual failed-boot recovery, physical init_boot restoration, power-loss durability, prolonged stability and other devices remain unqualified. Do not flash shared images or redistribute proprietary artifacts. No public release approved.
 
-Reference: [JoelMomo/AYN-Thor-WiFi-Recovery](https://github.com/JoelMomo/AYN-Thor-WiFi-Recovery), which motivated the diagnostic work. No upstream affiliation implied.
+Reference: [JoelMomo/AYN-Thor-WiFi-Recovery](https://github.com/JoelMomo/AYN-Thor-WiFi-Recovery). No upstream affiliation implied.

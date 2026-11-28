@@ -1,5 +1,7 @@
 # Manual Edition — experimental guide (documentation preview)
 
+**Current status (2026-11-28):** historical evidence below is retained. V4.3 RC1 owner lifecycle is qualified; public installer and independent recovery remain unqualified. See [community release gates](COMMUNITY_RELEASE.md) and [community guides](community/en.md).
+
 **Availability: read-only preflight and local stock extraction only. The complete activation workflow is not yet available as a working installer.**
 
 ## Goal and scope

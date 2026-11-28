@@ -1,5 +1,7 @@
 # Permanent Edition — V4.0 preparation (2026-11-27)
 
+**Current status (2026-11-28):** historical evidence below is retained. V4.3 RC1 owner lifecycle is qualified; public installer and independent recovery remain unqualified. See [community release gates](COMMUNITY_RELEASE.md) and [community guides](community/en.md).
+
 Status: design selected, boot writes denied. Magisk is the preferred candidate framework, not installed or qualified on Thor. RC1 remains the owner fallback. No need to repeat scanner trials, native ART compilation, boot inventory or backup parsing for unchanged evidence.
 
 ## Evidence baseline

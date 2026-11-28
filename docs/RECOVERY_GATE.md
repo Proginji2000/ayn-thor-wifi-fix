@@ -1,5 +1,7 @@
 # V3.7 — Independent firmware recovery gate
 
+**Current status (2026-11-28):** historical evidence below is retained. V4.3 RC1 owner lifecycle is qualified; public installer and independent recovery remain unqualified. See [community release gates](COMMUNITY_RELEASE.md) and [community guides](community/en.md).
+
 Status: BLOCKED for boot modification. Last verified device state: stock .377, slot a, PCI auto. Normal and watchdog-expiry volatile rollback PASS. Both init_boot backups (8 MiB each) and bootloader Fastboot transport previously verified. Actual partition restoration and full recovery remain untested.
 
 ## Recovery source leads checked 2026-11-26
