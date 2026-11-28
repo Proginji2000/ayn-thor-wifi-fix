@@ -666,9 +666,13 @@
       "native_bootstrap_empirical_trials_suspended": true,
       "next_step": "read_only_launcher_implementation_identification",
       "owner_v43_reactivation_recommended": true,
-      "owner_v43_reactivation_observed": false,
-      "owner_v43_reactivation_preflight_status": "blocked",
-      "owner_v43_reactivation_stop": "MODULE_STATE"
+      "owner_v43_reactivation_observed": true,
+      "owner_v43_reactivation_preflight_status": "pass",
+      "owner_v43_reactivation_stop": null,
+      "owner_v43_reactivation_checks_pass": 25,
+      "owner_v43_reactivation_health_checks_pass": 2,
+      "owner_v43_reactivation_exact_tuple_mount_checks_pass": 6,
+      "owner_v43_reactivation_early_mount_end_uptime_seconds": 3.61
     }
   }
 }
