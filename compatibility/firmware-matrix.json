@@ -652,7 +652,11 @@
         "per_line_void_dispatch_confirmed": true,
         "caller_consumes_command_exit_codes": false,
         "backend_execution_semantics_confirmed": false,
-        "exact_line_length_limit_confirmed": false
+        "exact_line_length_limit_confirmed": false,
+        "static_analysis_stage3_wrapper_pass": true,
+        "wrapper_discards_returned_string": true,
+        "wrapper_boolean_argument": false,
+        "boolean_argument_semantics_confirmed": false
       }
     },
     "manual_rc3": {
