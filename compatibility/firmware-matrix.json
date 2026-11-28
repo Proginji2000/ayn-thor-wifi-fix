@@ -709,19 +709,32 @@
       "owner_v43_reactivation_early_mount_end_uptime_seconds": 3.61
     },
     "manual_rc4": {
-      "status": "design_only",
+      "status": "partial_offline_lifecycle_core",
       "native_no_magisk": {
         "status": "blocked",
         "vendor_execution_contract_required": true
       },
       "adb_assisted_existing_authorized_root": {
-        "status": "not_implemented",
+        "status": "offline_core_synthetic_pass_android_adapter_not_implemented",
         "replaces_native_objective": false,
         "offline_fault_qualification_required": true,
         "physical_qualification_required": true
       },
       "activation_allowed": false,
-      "public_distribution_approved": false
+      "public_distribution_approved": false,
+      "offline_bench": {
+        "script_sha256": "0d553427bf456111f18f04be2d3a9e3f67aa558e278141da9ec67ce30438d707",
+        "rc3_source_hash_pass": true,
+        "preserved_payload_hashes_pass": 2,
+        "python_compile_pass": true,
+        "shell_syntax_checks_pass": 3,
+        "synthetic_cases_pass": 16,
+        "real_payload_tested": false,
+        "android_adapter_implemented": false,
+        "android_mv_semantics_qualified": false,
+        "device_access": false,
+        "deployment_allowed": false
+      }
     }
   }
 }
