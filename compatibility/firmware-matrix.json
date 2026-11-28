@@ -561,8 +561,22 @@
         "script_sha256": "6a15bf2b268164ebe9c4d0f7f90c63ac33244fd1a40ab3a987af8b8a1696aa88",
         "host_bash_syntax_pass": true,
         "generated_shell_syntax_pass": true,
-        "physical_tested": false,
-        "payload_execution": false
+        "physical_tested": true,
+        "payload_execution": false,
+        "status": "partial_missing_before_mkdir",
+        "enter_pass": true,
+        "before_mkdir_observed": false,
+        "checked_directory_absent": true,
+        "v43_unchanged_pass": true,
+        "cause_confirmed": false
+      },
+      "grammar": {
+        "script_sha256": "f9cf071cf1f9f8f2bf70e7271d3f22ee08c3052dfa5f8a61e1a0abd379aa7351",
+        "host_syntax_pass": true,
+        "generated_shell_syntax_pass": 3,
+        "local_mock_marker_sequences_pass": 3,
+        "android_tested": false,
+        "activation_allowed": false
       }
     }
   }
