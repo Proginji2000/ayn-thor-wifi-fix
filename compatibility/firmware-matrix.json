@@ -454,11 +454,22 @@
       "mixed_tuple_reject_pass": true,
       "negative_cli_rebuild_gate_pass": true,
       "output_collision_reject_pass": true,
-      "reference_wsl_audit_pending": true,
+      "reference_wsl_audit_pending": false,
       "actual_rebuild_executed": false,
       "independent_host_qualified": false,
       "portable_art_qualified": false,
-      "device_access": false
+      "device_access": false,
+      "reference_wsl_audit_pass": true,
+      "reference_variant_diagnostic_pass": true
+    },
+    "isolated_replay": {
+      "script_sha256": "e31cbadf0b0c8ead6298338c903a2f91de346ff77627c08daed7640d01f691d4",
+      "bash_syntax_pass": true,
+      "missing_input_rejection_pass": true,
+      "container_build_executed": false,
+      "isolated_rebuild_executed": false,
+      "independent_physical_host_qualified": false,
+      "portable_art_qualified": false
     }
   }
 }
