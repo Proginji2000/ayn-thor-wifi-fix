@@ -709,7 +709,7 @@
       "owner_v43_reactivation_early_mount_end_uptime_seconds": 3.61
     },
     "manual_rc4": {
-      "status": "owner_stock_storage_cycle_pass_clean_install_and_activation_unqualified",
+      "status": "owner_storage_pass_pc_staging_synthetic_pass_clean_install_unqualified",
       "native_no_magisk": {
         "status": "blocked",
         "vendor_execution_contract_required": true
@@ -769,6 +769,20 @@
         "recovery_qualified": false,
         "owner_v43_restoration_observed": false,
         "independent_postcondition_session_qualified": false
+      },
+      "pc_staging": {
+        "script_sha256": "559e04532d77953721715bf1c53fc1207772bb370e32e793393114c87cf52ba1",
+        "python_compile_pass": true,
+        "synthetic_cases_pass": 14,
+        "abrupt_process_exit_cases_pass": 3,
+        "invalid_real_mixed_tuple_rejected": true,
+        "real_payload_tested": false,
+        "separate_process_real_verification_pass": false,
+        "android_transfer_qualified": false,
+        "automatic_recovery": false,
+        "power_loss_qualified": false,
+        "device_access": false,
+        "deployment_allowed": false
       }
     }
   }
