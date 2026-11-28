@@ -645,7 +645,14 @@
         "baksmali_disassembly_pass": true,
         "activity_classes_found": 3,
         "processing_helper_identified": true,
-        "processing_helper": "K1/a"
+        "processing_helper": "K1/a",
+        "static_analysis_stage2_pass": true,
+        "line_oriented_dispatch_confirmed": true,
+        "scanner_line_reader_confirmed": true,
+        "per_line_void_dispatch_confirmed": true,
+        "caller_consumes_command_exit_codes": false,
+        "backend_execution_semantics_confirmed": false,
+        "exact_line_length_limit_confirmed": false
       }
     },
     "manual_rc3": {
