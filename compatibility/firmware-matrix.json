@@ -623,6 +623,10 @@
         "result_missing_marker_observed": true,
         "stock_and_manual_unchanged_pass": true,
         "launcher_implementation_confirmed": false
+      },
+      "launcher_identification": {
+        "status": "picker_only_caller_unconfirmed",
+        "implementation_confirmed": false
       }
     },
     "manual_rc3": {
@@ -662,7 +666,9 @@
       "native_bootstrap_empirical_trials_suspended": true,
       "next_step": "read_only_launcher_implementation_identification",
       "owner_v43_reactivation_recommended": true,
-      "owner_v43_reactivation_observed": false
+      "owner_v43_reactivation_observed": false,
+      "owner_v43_reactivation_preflight_status": "blocked",
+      "owner_v43_reactivation_stop": "MODULE_STATE"
     }
   }
 }
