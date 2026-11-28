@@ -482,12 +482,31 @@
       "local_directory_cases_pass": 3,
       "physical_tested": true,
       "existing_directory_reuse_allowed": false,
-      "exact_art_output_qualified": false,
+      "exact_art_output_qualified": true,
       "first_attempt_status": "blocked_fixed_path_occupied",
       "input_integrity_pass": true,
       "exclusive_collision_rejection_physical_pass": true,
-      "compilation_executed": false,
-      "existing_directory_provenance_verified": false
+      "compilation_executed": true,
+      "existing_directory_provenance_verified": false,
+      "historical_directory_provenance_verified": true,
+      "historical_directory_archived": true,
+      "native_compile_pass": true,
+      "art_metadata_pass": true,
+      "exact_owner_device_reconstruction_pass": true,
+      "active_v43_unchanged_pass": true,
+      "independent_device_qualified": false,
+      "stock_fixed_path_run_qualified": false
+    },
+    "exact_owner_device_art_reconstruction_pass": true,
+    "offline_packaging": {
+      "script_sha256": "a569ecd19310fbb9758f501da40578c4caa3595e71d49441da20fc2aaf5430ce",
+      "syntax_pass": true,
+      "synthetic_complete_packaging_pass": true,
+      "negative_cases_pass": 5,
+      "real_packaging_executed": false,
+      "manual_installer_qualified": false,
+      "device_access": false,
+      "public_release_approved": false
     }
   }
 }
