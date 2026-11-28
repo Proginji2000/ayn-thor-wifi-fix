@@ -503,10 +503,32 @@
       "syntax_pass": true,
       "synthetic_complete_packaging_pass": true,
       "negative_cases_pass": 5,
-      "real_packaging_executed": false,
+      "real_packaging_executed": true,
       "manual_installer_qualified": false,
       "device_access": false,
-      "public_release_approved": false
+      "public_release_approved": false,
+      "real_packaging_pass": true,
+      "exact_v43_zip_reproduction_pass": true,
+      "independent_cmp_pass": true,
+      "manual_bundle_only": true
+    },
+    "reference_end_to_end_reconstruction_pass": true,
+    "source_review": {
+      "status": "partial_initial_static_review",
+      "exact_source_hashes_pass": 6,
+      "rc2_manifest_hashes_pass": 6,
+      "rc2_zip_crc_pass": true,
+      "python_ast_pass": 3,
+      "standalone_bash_syntax_pass": 3,
+      "rc2_pilot_bash_syntax_pass": true,
+      "rc2_embedded_shell_syntax_pass": 4,
+      "v43_embedded_shell_syntax_pass": 2,
+      "rc2_worker_enable_hash_match": true,
+      "independent_security_review_pass": false,
+      "license_review_pass": false,
+      "manual_bootstrap_qualified": false,
+      "mixed_module_rollback_qualified": false,
+      "device_access": false
     }
   }
 }
