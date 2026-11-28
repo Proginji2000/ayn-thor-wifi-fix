@@ -443,6 +443,22 @@
     "plan": "docs/COMMUNITY_RELEASE.md",
     "owner_device_changes": false,
     "independent_host_build_qualified": false,
-    "portable_art_qualified": false
+    "portable_art_qualified": false,
+    "offline_audit": {
+      "script_sha256": "2c82395ec958ee108d993d455d9b59c470ae9cf3ded51a17792db628cb517018",
+      "host_syntax_pass": true,
+      "real_kit_hash_pass": true,
+      "synthetic_hash_accept_reject_pass": true,
+      "symlink_rejection_pass": true,
+      "synthetic_tuple_pass": true,
+      "mixed_tuple_reject_pass": true,
+      "negative_cli_rebuild_gate_pass": true,
+      "output_collision_reject_pass": true,
+      "reference_wsl_audit_pending": true,
+      "actual_rebuild_executed": false,
+      "independent_host_qualified": false,
+      "portable_art_qualified": false,
+      "device_access": false
+    }
   }
 }
