@@ -593,11 +593,34 @@
         "generated_shell_syntax_pass": true,
         "generated_max_line_bytes": 152,
         "line_limit_bytes": 180,
-        "physical_tested": false,
+        "physical_tested": true,
         "copied_payload_execution": false,
         "line_length_hypothesis": "near_256_bytes_unconfirmed",
-        "activation_allowed": false
+        "activation_allowed": false,
+        "observed_markers": 11,
+        "expected_markers": 11,
+        "short_lines_pass": true,
+        "inert_copy_hash_pass": true,
+        "root_init_paths_absent_after": true,
+        "v43_unchanged_pass": true,
+        "exact_line_limit_confirmed": false
       }
+    },
+    "manual_rc3": {
+      "script_sha256": "2bd4ff7bb2fa05e5d2f659bfc07fd7161ec17ab522d3f4cbc926f9c638f4e4f5",
+      "rc2_archive_crc_pass": true,
+      "rc2_manifest_files_pass": 6,
+      "unchanged_payload_templates": 4,
+      "host_bash_syntax_pass": true,
+      "rendered_shell_syntax_pass": 2,
+      "rendered_max_line_bytes": [
+        124,
+        130
+      ],
+      "invalid_renderer_inputs_rejected": 5,
+      "physical_install_qualified": false,
+      "physical_uninstall_qualified": false,
+      "public_distribution_approved": false
     }
   }
 }
