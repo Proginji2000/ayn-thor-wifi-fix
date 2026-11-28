@@ -529,6 +529,19 @@
       "manual_bootstrap_qualified": false,
       "mixed_module_rollback_qualified": false,
       "device_access": false
+    },
+    "permanent_preflight": {
+      "script_sha256": "40e87eee06dc18234952525c1b83a2420165583a74701e8d24c9090447a785d4",
+      "embedded_shell_syntax_pass": true,
+      "synthetic_report_cases_pass": 12,
+      "zip_rejection_cases_pass": 2,
+      "installed_mode_device_tested": false,
+      "stock_mode_device_tested": false,
+      "other_modules_supported": false,
+      "global_scripts_supported": false,
+      "mixed_module_rollback_qualified": false,
+      "recovery_qualified": false,
+      "deployment_allowed": false
     }
   }
 }
