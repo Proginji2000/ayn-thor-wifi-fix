@@ -624,7 +624,7 @@
       "stock_isolation_pass": true,
       "uninstall_preparation_pass": true,
       "uninstall_transfer_pass": true,
-      "uninstall_native_execution_confirmed": false,
+      "uninstall_native_execution_confirmed": true,
       "uninstall_log_empty": true,
       "uninstall_staged_hashes_match": true,
       "uninstall_launcher_exact_local_render_match": true,
@@ -632,7 +632,12 @@
       "uninstall_launcher_render_max_line_bytes": 130,
       "uninstall_base_retained": true,
       "uninstall_quarantine_present": false,
-      "inspected_locks_absent": true
+      "inspected_locks_absent": true,
+      "uninstall_bootstrap_markers_observed": 6,
+      "uninstall_bootstrap_markers_expected": 6,
+      "uninstall_bootstrap_pass": true,
+      "uninstall_child_logs_observed": false,
+      "uninstall_post_bootstrap_state_verified": false
     }
   }
 }
