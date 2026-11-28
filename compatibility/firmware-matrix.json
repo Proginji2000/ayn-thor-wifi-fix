@@ -549,8 +549,21 @@
       "script_sha256": "159923c90bce560ba7716abc1cbd687ecc9de74cf7331abb8248a5cedb278bf3",
       "host_syntax_pass": true,
       "embedded_template_syntax_checks_pass": 2,
-      "physical_tested": false,
-      "activation_allowed": false
+      "physical_tested": true,
+      "activation_allowed": false,
+      "first_run_status": "partial_missing_mkdir_marker",
+      "native_root_pass": true,
+      "native_boot_check_pass": true,
+      "mkdir_pass": false,
+      "mkdir_failure_cause_confirmed": false,
+      "v43_unchanged_pass": true,
+      "r2": {
+        "script_sha256": "6a15bf2b268164ebe9c4d0f7f90c63ac33244fd1a40ab3a987af8b8a1696aa88",
+        "host_bash_syntax_pass": true,
+        "generated_shell_syntax_pass": true,
+        "physical_tested": false,
+        "payload_execution": false
+      }
     }
   }
 }
