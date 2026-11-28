@@ -632,7 +632,7 @@
         "apk_path": "/system/app/OdinSettings/OdinSettings.apk",
         "picker_action": "android.intent.action.GET_CONTENT",
         "implementation_confirmed": false,
-        "local_apk_analysis_executed": false,
+        "local_apk_analysis_executed": true,
         "owner_local_apk_extraction_pass": true,
         "owner_reported_apk_sha256_match": true,
         "apk_crc_pass": true,
@@ -640,7 +640,12 @@
         "dex_count": 1,
         "dex_size_bytes": 3627912,
         "baksmali_available": true,
-        "jadx_available": false
+        "jadx_available": false,
+        "static_analysis_stage1_pass": true,
+        "baksmali_disassembly_pass": true,
+        "activity_classes_found": 3,
+        "processing_helper_identified": true,
+        "processing_helper": "K1/a"
       }
     },
     "manual_rc3": {
