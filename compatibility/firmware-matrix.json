@@ -620,7 +620,12 @@
       "invalid_renderer_inputs_rejected": 5,
       "physical_install_qualified": false,
       "physical_uninstall_qualified": false,
-      "public_distribution_approved": false
+      "public_distribution_approved": false,
+      "stock_isolation_pass": true,
+      "uninstall_preparation_pass": true,
+      "uninstall_transfer_pass": true,
+      "uninstall_native_execution_confirmed": false,
+      "uninstall_log_empty": true
     }
   }
 }
