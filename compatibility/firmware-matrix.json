@@ -480,9 +480,14 @@
       "host_shell_syntax_pass": true,
       "embedded_shell_syntax_pass": true,
       "local_directory_cases_pass": 3,
-      "physical_tested": false,
+      "physical_tested": true,
       "existing_directory_reuse_allowed": false,
-      "exact_art_output_qualified": false
+      "exact_art_output_qualified": false,
+      "first_attempt_status": "blocked_fixed_path_occupied",
+      "input_integrity_pass": true,
+      "exclusive_collision_rejection_physical_pass": true,
+      "compilation_executed": false,
+      "existing_directory_provenance_verified": false
     }
   }
 }
