@@ -604,6 +604,16 @@
         "root_init_paths_absent_after": true,
         "v43_unchanged_pass": true,
         "exact_line_limit_confirmed": false
+      },
+      "child_probe": {
+        "script_sha256": "01b94e5f826a7606a7fe5e6f01a6870d52be6ad5568691a919f86c10710e782a",
+        "host_bash_syntax_pass": true,
+        "snapshot_shell_syntax_pass": true,
+        "generated_shell_syntax_pass": 2,
+        "generated_max_line_bytes": 119,
+        "local_mock_child_exit23_stdout_pass": true,
+        "android_tested": false,
+        "activation_allowed": false
       }
     },
     "manual_rc3": {
@@ -637,7 +647,9 @@
       "uninstall_bootstrap_markers_expected": 6,
       "uninstall_bootstrap_pass": true,
       "uninstall_child_logs_observed": false,
-      "uninstall_post_bootstrap_state_verified": false
+      "uninstall_post_bootstrap_state_verified": true,
+      "uninstall_effective_status": "fail",
+      "post_bootstrap_stock_three_namespaces_pass": true
     }
   }
 }
